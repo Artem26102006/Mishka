@@ -1,197 +1,72 @@
-@media (max-width: 767px) {
-  .navigation__list-menu-open {
-    .list-none();
-    position: absolute;
-    left: 50%;
-    top: 71px;
-    width: 320px;
-    transform: translateX(-50%);
-    display: block;
-    text-align: center;
-    background-color: @white;
-    z-index: 101;
-    border-top: 1px solid @gray-light;
-    border-bottom: 1px solid @gray-light;
+.navigation {
+  &__events-menu {
+    display: none;
   }
-}
 
-.navigation__list-menu {
-  display: none;
-}
-
-.navigation__button-menu {
-  background: none;
-  margin: 0;
-  padding: 0;
-  border: none;
+  &__info {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "logo user"
+      "main parag";
+    align-items: center;
+    row-gap: 20px;
 
-.navigation__button {
-  &::before {
-    content: url("../img/icons/burger-open.svg");
-    width: 24px;
-    height: 19px;
-  }
-}
+    &__logo-burger {
+      grid-area: logo;
+    }
 
-.navigation__button--toggle {
-  width: 24px;
-  height: 19px;
-  background: none;
-  position: relative;
-  cursor: pointer;
-  top: -6px;
+    &__main-menu {
+      grid-area: main;
+      display: flex;
 
-  &::before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background-color: @black;
-    left: 0;
-    transform: rotate(45deg);
-  }
+      .menu__item {
+        flex-grow: 1;
+      }
+    }
 
-  &::after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background-color: @black;
-    left: 0;
-    transform: rotate(-45deg);
-  }
-}
+    &__user-menu {
+      grid-area: user;
+      display: flex;
+      justify-content: space-between;
+    }
 
-.navigation__link {
-  display: block;
-  color: @black;
-  padding: 22px 0 24px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: @black;
-  position: relative;
-  border: 1px solid @gray-light;
-}
-
-@media (min-width: @tablet-width) {
-  .navigation__button::before {
-    display: none;
-  }
-
-  .navigation__button {
-    display: none;
-  }
-
-  .navigation__item {
-    margin-right: 36px;
-  }
-
-  .navigation__item:last-child {
-    margin-right: 0;
-  }
-
-  .navigation__list-menu {
-    .list-none();
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-  }
-
-  .navigation__list-menu-open {
-    .list-none();
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    font-size: 18px;
+    &__info {
+      grid-area: parag;
+      display: block;
+      margin: 0;
+      margin-left: auto;
+    }
 
     @media (min-width: @desktop-width) {
-      font-size: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "main logo user"
+        "events . parag";
+
+      &__events-menu {
+        display: block;
+        grid-area: events;
+        display: flex;
+
+        .menu__item {
+          flex-grow: 1;
+        }
+      }
+
+      &__main-menu {
+        justify-content: space-between;
+
+        .menu__item {
+          flex-grow: 0;
+        }
+      }
     }
-  }
-
-  .navigation__link--active {
-    &::after {
-      content: "";
-      width: 100%;
-      height: 2px;
-      background-color: @green;
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-    }
-  }
-
-  .navigation__link--green, .navigation__link--green-white {
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 1;
-    }
-
-    &:active::after {
-      content: "";
-      width: 100%;
-      height: 2px;
-      background-color: @green;
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-    }
-  }
-
-  .navigation__link {
-    padding: 0;
-    border: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .navigation__link--green-white {
-    color: @white;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 1;
-    }
-
-    &:active::after {
-      content: "";
-      width: 100%;
-      height: 2px;
-      background-color: @white;
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-    }
-  }
-
-  .navigation__link--active-white {
-    &::after {
-      content: "";
-      width: 100%;
-      height: 2px;
-      background-color: @white;
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-    }
-  }
-
-  .navigation__list-menu {
-    font-size: 20px;
-  }
-
-  .navigation__item {
-    margin-right: 35px;
   }
 }

@@ -1,18 +1,14 @@
 .container {
-  width: 280px;
-  margin: 0 auto;
-}
+  width: auto;
+  padding: 0 2.142857142857143em;
 
-@media (min-width: @tablet-width) {
-  .container {
-    width: 708px;
-    margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    padding: 0 3.333333333333333em;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .container {
-    width: 1220px;
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    max-width: 1052px;
     margin: 0 auto;
   }
 }
