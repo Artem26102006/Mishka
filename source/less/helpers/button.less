@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  padding: 0;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: @white;
+  background-color: @green;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background-color: @green-dark;
+  }
+
+  &:active {
+    .button__text {
+      opacity: 0.3;
+    }
+  }
+}

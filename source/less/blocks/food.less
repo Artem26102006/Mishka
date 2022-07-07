@@ -1,0 +1,350 @@
+.food {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    background-color: @green;
+    height: 302px;
+    background: url(../img/background-with-cat-mobile.jpg) no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/background-with-cat-mobile@2x.jpg") no-repeat;
+      background-size: 320px auto;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 720px;
+      height: 694px;
+      background-color: @green;
+      background: url("../img/background-with-cat-desktop.jpg") no-repeat;
+      background-position: right bottom;
+      z-index: -100;
+      margin-top: -142px;
+      right: 0;
+      left: 50%;
+      transform: translateX(0);
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/background-with-cat-desktop@2x.jpg") no-repeat;
+        background-size: 720px auto;
+      }
+    }
+  }
+}
+
+.food__choose-programm {
+  color: @white;
+}
+
+.food__title-main {
+  width: 259px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-top: 27px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.food__paragraph-main {
+  width: 240px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.food__button-link {
+  font-size: 14px;
+  padding: 10px 0 10px 0;
+}
+
+.food__list-programms {
+  .list-none();
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    row-gap: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.food__list-item {
+  padding: 20px 33px 18px 20px;
+  box-sizing: border-box;
+  background-color: @gray-very-light;
+  position: relative;
+}
+
+.food__title-item {
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+  }
+}
+
+.food__title-slim {
+  margin-left: 70px;
+}
+
+.food__title-pro {
+  margin-left: 80px;
+}
+
+.food__paragraph-item {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding-bottom: 23px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.food__item-block-slim {
+  background: url("../img/icons/cat-slim.svg") no-repeat;
+}
+
+.food__item-block-pro {
+  background: url("../img/icons/cat-pro.svg") no-repeat;
+}
+
+.food__picture img {
+  width: 280px;
+  height: 270px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.food__link-item {
+  margin-top: 15px;
+  display: block;
+  color: @black;
+  position: relative;
+  width: 134px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: url("../img/icons/icon.svg") no-repeat;
+  background-size: 24px 12px;
+  background-position: 105px center;
+
+  &:hover {
+    background-size: 32px 12px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 1.5px;
+    bottom: 37px;
+    background: @gray-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .food {
+    background: none;
+    position: relative;
+    padding: 0;
+
+    &::after {
+      content: "";
+      display: none;
+    }
+  }
+
+  .food__choose-programm {
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 530px;
+  }
+
+  .food__picture {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  .food__button-link {
+    width: 244px;
+    font-size: 20px;
+    padding: 14px 0 14px 0;
+    margin-left: 90px;
+  }
+
+  .food__title-main {
+    font-size: 60px;
+    color: @black;
+    line-height: 60px;
+    width: 420px;
+    text-align: start;
+    margin: 0;
+    margin-left: 90px;
+    margin-bottom: 41px;
+    padding: 0;
+  }
+
+  .food__paragraph-item {
+    width: 340px;
+    line-height: 24px;
+    font-size: 16px;
+    padding-bottom: 52px;
+  }
+
+  .food__link-item {
+    margin-top: 0;
+    font-size: 20px;
+    width: 155px;
+    background-position: 123px center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .food__paragraph-main {
+    color: @black;
+    margin-left: 90px;
+    width: 283px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .food__list-item {
+    width: 100%;
+    padding: 50px 0px 53px 52px;
+  }
+
+  .food__item-block-slim {
+    background: url("../img/icons/cat-slim.svg") no-repeat;
+    background-size: 200px;
+    background-position: right;
+    margin-right: 62px;
+  }
+
+  .food__item-block-pro {
+    background: url("../img/icons/cat-pro.svg") no-repeat;
+    background-size: 268px;
+    background-position: right;
+    margin-right: 28px;
+  }
+
+  .food__link::before {
+    display: none;
+  }
+
+  .food__title-item {
+    font-size: 36px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .food {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 141px;
+    position: relative;
+  }
+
+  .food__item-block-slim {
+    background: url("../img/icons/cat-slim.svg") no-repeat;
+    background-size: 100px;
+    background-position: top left;
+    margin: 0;
+  }
+
+  .food__item-block-pro {
+    background: url("../img/icons/cat-pro.svg") no-repeat;
+    background-size: 134px;
+    background-position: top left;
+    margin: 0;
+  }
+
+  .food__picture {
+    top: 0;
+    left: 445px;
+    z-index: 0;
+  }
+
+  .food__choose-programm {
+    padding-top: 85px;
+    padding-bottom: 260px;
+  }
+
+  .food__list-item {
+    width: 570px;
+    padding: 41px 51px 55px 52px;
+    margin: 0;
+  }
+
+  .food__paragraph-item {
+    width: 100%;
+    line-height: 24px;
+    font-size: 16px;
+    padding-bottom: 27px;
+  }
+
+  .food__title-item {
+    margin-left: 0;
+    padding-top: 33px;
+    margin-bottom: 65px;
+  }
+
+  .food__title-slim {
+    margin-left: 165px;
+  }
+
+  .food__title-pro {
+    margin-left: 185px;
+  }
+}
