@@ -1,0 +1,38 @@
+.user-menu {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    &__item {
+      flex-grow: 1;
+    }
+
+    &__span {
+      display: none;
+    }
+
+    &__search {
+      position: relative;
+      height: 88px;
+      border-left: 2px solid var(--gray);
+      border-right: 2px solid var(--gray);
+    }
+
+    &__icon-search {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__link-basket {
+      padding: 35px 0;
+    }
+
+    &__basket {
+      margin-right: 31px;
+      margin-left: 33px;
+    }
+  }
+}

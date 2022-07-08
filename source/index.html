@@ -27,36 +27,39 @@
           </button>
         </div>
 
-        <ul class="menu navigation__main-menu">
-          <li class="menu__item">
+        <ul class="main-menu menu navigation__main-menu">
+          <li class="menu__item main-menu__item">
             <a href="#" class="menu__link">
               Каталог товаров
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item main-menu__item">
             <a href="#" class="menu__link">
               Вязание на заказ
             </a>
           </li>
         </ul>
 
-        <ul class="menu navigation__user-menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link">
-              Поиск по сайту
-              <svg width="18" height="18">
+        <ul class="user-menu menu navigation__user-menu">
+          <li class="menu__item user-menu__item">
+            <a href="#" class="menu__link user-menu__search">
+              <svg width="18" height="18" class="user-menu__icon-search">
                 <use href="img/sprite.svg#search"></use>
               </svg>
+              <span class="user-menu__span">Поиск по сайту</span>
             </a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link menu__link-basket">
-              Корзина: пока пуста
+          <li class="menu__item user-menu__item">
+            <a href="#" class="menu__link user-menu__link-basket menu__link--end">
+              <svg width="21" height="18" class="user-menu__basket">
+                <use href="img/sprite.svg#basket"></use>
+              </svg>
+              <span>Корзина: пока пуста</span>
             </a>
           </li>
         </ul>
 
-        <ul class="menu navigation__events-menu">
+        <ul class="events-menu menu navigation__events-menu">
           <li class="menu__item">
             <a href="#" class="menu__link">
               Новые поступления

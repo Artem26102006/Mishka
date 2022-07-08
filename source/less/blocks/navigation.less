@@ -1,8 +1,4 @@
 .navigation {
-  &__events-menu {
-    display: none;
-  }
-
   &__info {
     display: none;
   }
@@ -23,27 +19,12 @@
 
     &__main-menu {
       grid-area: main;
-      display: flex;
       position: absolute;
-      width: 100%;
       top: 20px;
-
-      .menu__item {
-        flex-grow: 1;
-      }
     }
 
     &__user-menu {
       grid-area: user;
-      display: flex;
-
-      .menu__item {
-        flex-grow: 1;
-      }
-
-      .menu__link-basket {
-        text-align: end;
-      }
     }
 
     &__info {
@@ -66,22 +47,11 @@
       &__events-menu {
         grid-area: events;
         position: absolute;
-        width: 100%;
         top: 20px;
-        display: flex;
-
-        .menu__item {
-          flex-grow: 1;
-        }
       }
 
       &__main-menu {
         position: static;
-        justify-content: space-between;
-
-        .menu__item {
-          flex-grow: 0;
-        }
       }
     }
   }

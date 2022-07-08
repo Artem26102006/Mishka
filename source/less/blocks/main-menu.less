@@ -1,0 +1,20 @@
+.main-menu {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__item {
+      flex-grow: 1;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+
+    &__item {
+      flex-grow: 0;
+    }
+  }
+}
