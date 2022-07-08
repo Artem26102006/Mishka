@@ -4,4 +4,20 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr min-content;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+  &__header {
+    grid-area: header;
+  }
+
+  &__main {
+    grid-area: main;
+  }
+
+  &__footer {
+    grid-area: footer;
+  }
 }

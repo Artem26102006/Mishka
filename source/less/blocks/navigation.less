@@ -8,6 +8,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
@@ -15,7 +16,6 @@
       "logo user"
       "main parag";
     align-items: center;
-    row-gap: 20px;
 
     &__logo-burger {
       grid-area: logo;
@@ -24,6 +24,9 @@
     &__main-menu {
       grid-area: main;
       display: flex;
+      position: absolute;
+      width: 100%;
+      top: 20px;
 
       .menu__item {
         flex-grow: 1;
@@ -33,13 +36,23 @@
     &__user-menu {
       grid-area: user;
       display: flex;
-      justify-content: space-between;
+
+      .menu__item {
+        flex-grow: 1;
+      }
+
+      .menu__link-basket {
+        text-align: end;
+      }
     }
 
     &__info {
       grid-area: parag;
       display: block;
       margin: 0;
+      position: absolute;
+      top: 20px;
+      right: 0;
       margin-left: auto;
     }
 
@@ -51,8 +64,10 @@
         "events . parag";
 
       &__events-menu {
-        display: block;
         grid-area: events;
+        position: absolute;
+        width: 100%;
+        top: 20px;
         display: flex;
 
         .menu__item {
@@ -61,6 +76,7 @@
       }
 
       &__main-menu {
+        position: static;
         justify-content: space-between;
 
         .menu__item {
