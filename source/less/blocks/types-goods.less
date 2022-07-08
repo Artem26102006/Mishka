@@ -1,0 +1,58 @@
+.types-goods {
+  .list-none();
+  width: 100%;
+  font-size: 1.35714286rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  &__item {
+    background-color: var(--green);
+
+    &--back-darker {
+      --green: #56c3b2;
+      background-color: var(--green);
+    }
+  }
+
+  &__link {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+    padding: 24px 0 31px 30px;
+  }
+
+  &__link-interior {
+    position: relative;
+
+    &::after {
+      content: url("../img/icons/interior.svg");
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 62px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 36px;
+    }
+  }
+
+  &__link-toy {
+    position: relative;
+
+    &::after {
+      content: url("../img/icons/toy.svg");
+      position: absolute;
+      display: block;
+      width: 60px;
+      height: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 27px;
+    }
+  }
+
+  &__span {
+    display: block;
+    width: 130px;
+  }
+}

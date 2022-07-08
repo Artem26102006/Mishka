@@ -1,0 +1,30 @@
+.promo {
+  background-color: var(--gray-back);
+}
+
+.promo__title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.92857143rem;
+  padding: 0 2.142857142857143rem;
+  line-height: 30px;
+  margin-bottom: auto;
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 6.5rem;
+  min-height: 489px;
+  box-sizing: border-box;
+  background-image: url(../img/back-image-mobile.jpg);
+  background-size: 320px 373px;
+  background-position: center -15%;
+  background-repeat: no-repeat;
+  margin-bottom: 31px;
+
+  @media (min-width: 640px) and (max-width: @tablet-width) {
+    min-height: 400px;
+  }
+}
