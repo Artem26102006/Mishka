@@ -1,0 +1,20 @@
+.characteristics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 0;
+
+  &__block {
+    display: flex;
+    padding: 12px 0 14px 0;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  &__title {
+    flex-basis: 97px;
+  }
+
+  &__value {
+    flex-grow: 1;
+    margin: 0;
+  }
+}
