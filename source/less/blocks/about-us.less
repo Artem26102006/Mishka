@@ -1,3 +1,23 @@
 .about-us {
-  
+  padding-bottom: 4.142857142857143em;
+
+  &__container {
+    padding-top: 2.214285714285714em;
+  }
+
+  &__title {
+    font-size: 1.785714285714286rem;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 1.12em;
+  }
+
+  &__wrapper {
+    @media (min-width: @desktop-width) {
+      max-width: 640px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
 }

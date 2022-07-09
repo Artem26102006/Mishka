@@ -1,0 +1,36 @@
+.buttons-slider {
+  border: 1px solid var(--gray);
+  display: flex;
+  min-height: 52px;
+  justify-content: space-between;
+  position: relative;
+
+  &__button {
+    display: block;
+    padding: 0.9285714285714286em 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    width: 50%;
+
+    &::before {
+      content: url("../img/icons/arrow.svg");
+      position: absolute;
+      width: 50px;
+      height: 26px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__button--reverse {
+    &::before {
+      transform-origin: 25% 25%;
+      transform: rotate(180deg);
+    }
+  }
+}

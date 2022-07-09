@@ -1,3 +1,61 @@
 .benefits-list {
-  
+  .list-none();
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 33px;
+
+  &__paragraph {
+    margin: 0;
+    font-size: 1.21428571rem;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__item-eco {
+    &::before {
+      content: url("../img/icons/ecological.svg");
+      display: block;
+      margin-bottom: 1.142857142857143em;
+    }
+  }
+
+  &__item-price {
+    &::before {
+      content: url("../img/icons/price.svg");
+      display: block;
+      margin-bottom: 1.857142857142857em;
+    }
+  }
+
+  &__item-like {
+    &::before {
+      content: url(../img/icons/like.svg);
+      display: block;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  &__item-related {
+    &::before {
+      content: url(../img/icons/related.svg);
+      display: block;
+      margin-bottom: 1.214285714285714em;
+    }
+  }
+
+  &__item-support {
+    &::before {
+      content: url(../img/icons/support.svg);
+      display: block;
+      margin-bottom: 1.857142857142857em;
+    }
+  }
+
+  &__item-gift {
+    &::before {
+      content: url(../img/icons/gift.svg);
+      display: block;
+      margin-bottom: 1.428571428571429em;
+    }
+  }
 }
