@@ -1,19 +1,24 @@
 .main-menu {
   position: relative;
+  box-sizing: border-box;
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 21px 0;
-    border-top: 2px solid var(--gray);
-    background-color: var(--gray-back);
 
     &__item {
       flex-grow: 1;
     }
+  }
 
-    &::before {
-      content: "";
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+      flex-grow: 0;
     }
   }
 }
