@@ -1,0 +1,35 @@
+.data {
+  margin-top: 0;
+  color: var(--black-light);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  row-gap: 35px;
+  column-gap: 25px;
+  justify-content: space-between;
+
+  &__block {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    grid-template-rows: min-content min-content;
+  }
+
+  &__title {
+    line-height: 30px;
+  }
+
+  &__value {
+    margin: 0;
+    line-height: 30px;
+  }
+
+  &__link-email {
+    color: var(--black-light);
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--green);
+  }
+
+  &__address {
+    font-style: normal;
+  }
+}
