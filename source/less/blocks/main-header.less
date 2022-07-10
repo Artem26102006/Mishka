@@ -5,25 +5,8 @@
   @media (min-width: @tablet-width) {
     background-color: var(--gray-back);
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: calc(50vw - 320px);
-      min-height: 88px;
-      background-color: var(--white);
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: calc(50vw - 526px);
-      min-height: 88px;
-      background-color: var(--white);
+    &__container {
+      padding: 0;
     }
   }
 }
