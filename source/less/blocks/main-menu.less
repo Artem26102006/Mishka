@@ -1,20 +1,19 @@
 .main-menu {
+  position: relative;
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    padding: 21px 0;
+    border-top: 2px solid var(--gray);
+    background-color: var(--gray-back);
 
     &__item {
       flex-grow: 1;
     }
-  }
 
-  @media (min-width: @tablet-width) {
-    justify-content: space-between;
-
-    &__item {
-      flex-grow: 0;
+    &::before {
+      content: "";
     }
   }
 }

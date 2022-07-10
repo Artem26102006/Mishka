@@ -1,7 +1,7 @@
 .user-menu {
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     &__item {
@@ -14,9 +14,9 @@
 
     &__search {
       position: relative;
-      height: 88px;
-      border-left: 2px solid var(--gray);
-      border-right: 2px solid var(--gray);
+      padding: 44px 40px;
+      border-left: 2px solid var (--gray);
+      border-right: 2px solid var (--gray);
     }
 
     &__icon-search {
@@ -27,7 +27,7 @@
     }
 
     &__link-basket {
-      padding: 35px 0;
+      padding: 20px 0;
     }
 
     &__basket {
