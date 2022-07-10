@@ -2,10 +2,15 @@
   display: none;
 
   @media (min-width: @desktop-width) {
-    width: 100%;
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     align-items: center;
     column-gap: 65px;
+    background-color: var(--gray-back);
+
+    &__link {
+      padding: 19px 0;
+    }
   }
 }

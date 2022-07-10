@@ -1,13 +1,19 @@
 .main-menu {
   position: relative;
   box-sizing: border-box;
+  background-color: var(--white);
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    background-color: var(--gray-back);
 
     &__item {
       flex-grow: 1;
+    }
+
+    &__link {
+      padding: 20px 0;
     }
   }
 
@@ -16,6 +22,12 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-self: flex-start;
+    background: none;
+
+    &__link {
+      padding: 33px 0 32px 0;
+    }
 
     &__item {
       flex-grow: 0;
