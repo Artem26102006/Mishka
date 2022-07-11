@@ -2,14 +2,36 @@
   padding-top: 2.714285714285714em;
   padding-bottom: 4.428571428571429em;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 6.066666666666667em;
+    padding-bottom: 3.8em;
+  }
+
   &__title {
+    position: relative;
     font-size: 1.785714285714286rem;
     margin: 0;
     margin-bottom: 1.12em;
+
+    @media (min-width: @tablet-width) {
+      font-size: 2.866666666666667rem;
+      line-height: 50px;
+
+      &::after {
+        content: url("../img/icons/flag.svg");
+        position: absolute;
+        right: 24px;
+        bottom: -5px;
+      }
+    }
   }
 
   &__data {
     margin-bottom: 4.428571428571429em;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 3.266666666666667em;
+    }
   }
 
   &__button {
@@ -22,6 +44,10 @@
       width: 500px;
       margin: 0 auto;
       margin-top: 3em;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 230px;
     }
   }
 }
