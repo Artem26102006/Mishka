@@ -1,10 +1,25 @@
 .review-wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-areas:
+      "title button"
+      "parag parag"
+      "info slider";
+  }
 
   &__title {
     margin: 0;
     font-size: 1.785714285714286rem;
     line-height: 30px;
     margin-bottom: 0.56em;
+    @media (min-width: @tablet-width) {
+      grid-area: title;
+      line-height: 50px;
+      font-size: 2.866666666666667rem;
+      margin: 0;
+    }
   }
 
   &__paragraph {
@@ -13,6 +28,12 @@
     font-size: 1.071428571428571rem;
     line-height: 30px;
     margin-bottom: 2.2em;
+
+    @media (min-width: @tablet-width) {
+      grid-area: parag;
+      font-size: 1.133333333333333rem;
+      margin: 2.352941176470588em 1.647058823529412em 3.588235294117647em 0;
+    }
   }
 
   &__user {
@@ -23,7 +44,10 @@
     margin-bottom: 2.142857142857143em;
 
     @media (min-width: @tablet-width) {
-
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      grid-area: info;
     }
   }
 
@@ -45,17 +69,32 @@
 
   &__buttons-slider {
     margin-bottom: 2.714285714285714em;
+    grid-area: slider;
   }
 
   &__button {
     width: 100%;
     margin: 0 auto;
     max-width: 500px;
+
+    @media (min-width: @tablet-width) {
+      width: 175px;
+      margin: 0;
+      margin-left: auto;
+      grid-area: button;
+    }
   }
 
   &__buttons-slider {
     width: 100%;
+    min-height: 52px;
     margin: 0 auto 2.714285714285714em;
     max-width: 500px;
+
+    @media (min-width: @tablet-width) {
+      width: 175px;
+      margin: 0;
+      margin-left: auto;
+    }
   }
 }

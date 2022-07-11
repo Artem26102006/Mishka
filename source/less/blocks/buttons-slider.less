@@ -1,9 +1,12 @@
 .buttons-slider {
   border: 1px solid var(--gray);
   display: flex;
-  min-height: 52px;
   justify-content: space-between;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 
   &__button {
     display: block;
