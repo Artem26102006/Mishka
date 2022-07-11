@@ -1,15 +1,40 @@
 .descrip-product {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "paragraph img"
+      "character img"
+      "price img"
+      "button img";
+  }
+
   &__paragraph {
     margin: 0;
     line-height: 24px;
     font-size: 1.07142857rem;
     margin-bottom: 28px;
+    grid-area: paragraph;
+
+    @media (min-width: @tablet-width) {
+      font-size: 1.133333333333333rem;
+      line-height: 30px;
+      margin-bottom: 2.823529411764706em;
+    }
   }
 
   &__image-block {
-    margin: 0 auto;
+    margin: 0;
     margin-top: 28px;
     margin-bottom: 26px;
+    grid-area: img;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      padding-left: 38px;
+      margin-left: auto;
+    }
   }
 
   &__image {
@@ -17,6 +42,18 @@
     width: 260px;
     height: auto;
     margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      width: 334px;
+      margin: 0;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__characteristics {
+    grid-area: character;
   }
 
   &__price {
@@ -26,11 +63,23 @@
     font-size: 1.214285714285714rem;
     font-weight: bold;
     margin-bottom: 1.470588235294118em;
+    grid-area: price;
+
+    @media (min-width: @tablet-width) {
+      font-size: 1.333333333333333rem;
+      margin-top: 2.85em;
+    }
   }
 
   &__button {
     width: 100%;
     margin: 0 auto;
     max-width: 500px;
+    grid-area: button;
+
+    @media (min-width: @tablet-width) {
+      width: 292px;
+      margin: 0 auto;
+    }
   }
 }

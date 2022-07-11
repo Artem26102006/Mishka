@@ -9,13 +9,19 @@
   padding: 0 2.142857142857143rem;
   line-height: 30px;
   margin-bottom: auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 2.866666666666667rem;
+    line-height: 50px;
+    margin-bottom: 8.651162790697674em;
+  }
 }
 
 .promo__container {
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-top: 6.5rem;
+  padding-top: 5.214285714285714em;
   min-height: 489px;
   box-sizing: border-box;
   background-image: url(../img/back-image-mobile.jpg);
@@ -25,5 +31,15 @@
 
   @media (min-width: 640px) and (max-width: @tablet-width) {
     min-height: 400px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 7.333333333333333em;
+    padding-left: 3.333333333333333em;
+    padding-right: 3.333333333333333em;
+    background-image: url(../img/back-image-tablet.jpg);
+    background-size: 768px 746px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

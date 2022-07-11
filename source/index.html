@@ -93,7 +93,7 @@
     <section class="popular-product">
       <div class="container">
         <div class="popular-product-block">
-          <div class="headline headline__block">
+          <div class="headline popular-product-block__headline">
             <h2 class="headline__title">Вязаные корзинки</h2>
             <p class="headline__paragraph">Товар недели</p>
           </div>
@@ -121,6 +121,7 @@
 
             <div class="descrip-product__image-block">
               <picture>
+                <source media="(min-width: 768px)" srcset="img/product-tablet.jpg" />
                 <img class="descrip-product__image" src="img/product-mobile.jpg" srcset="img/product-mobile@2x.jpg 2x"
                   alt="">
               </picture>
@@ -134,6 +135,7 @@
               Заказать
             </a>
           </div>
+
         </div>
       </div>
     </section>
@@ -240,7 +242,43 @@
       </a>
     </section>
   </main>
-  <footer class="footer page-body__footer"></footer>
+  <footer class="footer page-body__footer">
+    <div class="container">
+      <a href="#" class="footer__icon-link">
+        <svg width="102" height="34" class="footer__icon">
+          <use href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
+
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <svg width="28" height="22" class="social-list__icon">
+              <use href="img/sprite.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <svg width="28" height="22" class="social-list__icon">
+              <use href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <svg width="28" height="22" class="social-list__icon">
+              <use href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="footer__link-academy">
+        Разработано
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,26 @@
+.footer {
+  --gray-back: #F1F1F1;
+  background-color: var(--gray-back);
+  padding: 1.785714285714286em 0 1.642857142857143em 0;
+
+  &__icon-link {
+    display: none;
+  }
+
+  &__link-academy {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-size: 1.357142857142857rem;
+    line-height: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.578947368421053em;
+    column-gap: 1.421052631578947em;
+    justify-content: center;
+
+    &::after {
+      content: url("../../img/icons/htmlacademy.svg");
+    }
+  }
+}
