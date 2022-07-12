@@ -3,7 +3,35 @@
     margin-bottom: 1.285714285714286em;
 
     @media (min-width: @tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 2.533333333333333em;
+    }
+  }
+
+  &__headline-title {
+    margin: 0;
+    font-size: 1.78571429rem;
+    line-height: 30px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 2.866666666666667rem;
+      line-height: 50px;
+    }
+  }
+
+  &__headline-paragraph {
+    margin: 0;
+    line-height: 20px;
+    font-size: 1.21428571rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--green);
+
+    @media (min-width: @tablet-width) {
+      width: 100px;
+      text-align: center;
     }
   }
 }
