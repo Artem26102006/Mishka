@@ -22,6 +22,12 @@
       line-height: 30px;
       margin-bottom: 2.3em;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 292px;
+      margin-bottom: 2.588235294117647em;
+      margin-left: 10.88235294117647em;
+    }
   }
 
   &__image-block {
@@ -36,6 +42,13 @@
       margin-left: auto;
       margin-top: auto;
     }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
   }
 
   &__image {
@@ -46,12 +59,22 @@
 
     @media (min-width: @tablet-width) {
       width: 334px;
+      height: 404px;
       margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 525px;
+      height: 636px;
     }
   }
 
   &__characteristics {
     grid-area: character;
+
+    @media (min-width: @desktop-width) {
+      width: 291px;
+    }
   }
 
   &__price {
@@ -67,6 +90,10 @@
       font-size: 1.333333333333333rem;
       margin-top: 2.85em;
     }
+
+    @media (min-width: @desktop-width) {
+      margin: 5.5em 0 1.15em 6em;
+    }
   }
 
   &__button {
@@ -78,6 +105,10 @@
     @media (min-width: @tablet-width) {
       width: 292px;
       margin: 0 auto;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 10.29411764705882em;
     }
   }
 }

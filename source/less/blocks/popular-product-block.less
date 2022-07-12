@@ -1,5 +1,7 @@
 .popular-product-block {
+  position: relative;
   &__headline {
+    position: relative;
     margin-bottom: 1.285714285714286em;
 
     @media (min-width: @tablet-width) {
@@ -7,6 +9,15 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 2.533333333333333em;
+    }
+
+    @media (min-width: @desktop-width) {
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      padding-top: 4.066666666666667em;
+      margin-left: 2.333333333333333em;
+      column-gap: 2.866666666666667em;
+      z-index: 2;
     }
   }
 
@@ -18,6 +29,11 @@
     @media (min-width: @tablet-width) {
       font-size: 2.866666666666667rem;
       line-height: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 3.533333333333333rem;
+      line-height: 57px;
     }
   }
 
