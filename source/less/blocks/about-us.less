@@ -1,16 +1,15 @@
 .about-us {
+  padding-top: 2.214285714285714em;
   padding-bottom: 4.142857142857143em;
 
   @media (min-width: @tablet-width) {
+    padding-top: 4.466666666666667em;
     padding-bottom: 5.533333333333333em;
   }
 
-  &__container {
-    padding-top: 2.214285714285714em;
-
-    @media (min-width: @tablet-width) {
-      padding-top: 4.466666666666667em;
-    }
+  @media (min-width: @desktop-width) {
+    padding-top: 5.8em;
+    padding-bottom: 6em;
   }
 
   &__title {
@@ -24,6 +23,12 @@
       font-size: 2.866666666666667rem;
       margin-bottom: 0.9534883720930233em;
     }
+
+    @media (min-width: @desktop-width) {
+      font-size: 3.533333333333333rem;
+      line-height: 57px;
+      margin-bottom: 1.261904761904762em;
+    }
   }
 
   &__wrapper {
@@ -31,7 +36,7 @@
       max-width: 640px;
       display: flex;
       flex-direction: column;
-      margin: 0 auto;
+      margin-left: 175px;
     }
   }
 }

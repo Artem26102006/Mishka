@@ -2,11 +2,11 @@
   .list-none();
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  row-gap: 33px;
+  gap: 33px;
 
   @media (min-width: @tablet-width) {
     row-gap: 57px;
-    column-gap: 100px;
+    column-gap: 50px;
     grid-auto-flow: dense;
   }
 
@@ -15,6 +15,11 @@
     font-size: 1.21428571rem;
     line-height: 20px;
     font-weight: bold;
+
+    @media (min-width: @tablet-width) {
+      font-size: 1.333333333333333rem;
+      line-height: 22px;
+    }
   }
 
   &__item-eco {
