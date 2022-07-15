@@ -5,6 +5,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
+  @media (min-width: 550px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @tablet-width){
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
   &__item {
     background-color: var(--green);
 

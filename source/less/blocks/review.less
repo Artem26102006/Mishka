@@ -20,6 +20,14 @@
   @media (min-width: @desktop-width) {
     background: 0 0;
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
+
+    &::before {
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
