@@ -2,11 +2,21 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   margin: 0;
+  font-size: 15px;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-left: 175px;
+  }
 
   &__block {
     display: flex;
     padding: 12px 0 14px 0;
     border-bottom: 1px solid var(--gray);
+
+    @media (min-width: @tablet-width) {
+      padding: 10px 0 10px 0;
+    }
   }
 
   &__title {

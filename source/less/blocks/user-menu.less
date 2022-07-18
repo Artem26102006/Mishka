@@ -1,8 +1,11 @@
 .user-menu {
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    position: relative;
+    background-color: var(--white);
+    padding-right: 50px;
 
     &__item {
       flex-grow: 1;
@@ -10,13 +13,6 @@
 
     &__span {
       display: none;
-    }
-
-    &__search {
-      position: relative;
-      height: 88px;
-      border-left: 2px solid var(--gray);
-      border-right: 2px solid var(--gray);
     }
 
     &__icon-search {
@@ -27,12 +23,33 @@
     }
 
     &__link-basket {
-      padding: 35px 0;
+      padding: 20px 0;
     }
 
     &__basket {
       margin-right: 31px;
       margin-left: 33px;
+    }
+
+    &__search {
+      position: relative;
+      padding: 44px 40px;
+      border-left: 2px solid var(--gray);
+      border-right: 2px solid var(--gray);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 351px;
+      width: calc(50vw - 526px);
+      height: 100%;
+      background-color: var(--white);
     }
   }
 }

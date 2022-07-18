@@ -1,0 +1,43 @@
+.footer {
+  --gray-back: #F1F1F1;
+  background-color: var(--gray-back);
+  padding: 25px 0 23px 0;
+
+  @media (min-width: @tablet-width)  {
+    padding: 51px 0 58px 0;
+  }
+
+  &__icon-link {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+
+  &__link-academy {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-size: 19px;
+    line-height: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
+    column-gap: 27px;
+    justify-content: center;
+
+    @media (min-width: @tablet-width){
+      justify-content: flex-start;
+      margin: 0;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

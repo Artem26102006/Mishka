@@ -1,0 +1,15 @@
+.social-list {
+  .list-none();
+  display: flex;
+  column-gap: 29px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--gray-light);
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    justify-content: flex-start;
+    border: none;
+  }
+}

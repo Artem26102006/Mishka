@@ -1,0 +1,40 @@
+.about-us {
+  padding-top: 31px;
+  padding-bottom: 58px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 67px;
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 75px;
+    padding-bottom: 81px;
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 28px;
+
+    @media (min-width: @tablet-width) {
+      line-height: 50px;
+      font-size: 43px;
+      margin-bottom: 41px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 53px;
+      line-height: 57px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: @desktop-width) {
+      max-width: 640px;
+      margin-left: 175px;
+    }
+  }
+}

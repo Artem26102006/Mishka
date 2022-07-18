@@ -1,0 +1,33 @@
+.review {
+  padding-bottom: 3.214285714285714em;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/back-image-review.jpg") no-repeat;
+    padding-top: 5.533333333333333em;
+    padding-bottom: 10.8em;
+
+    &::before {
+      content: "";
+      background: url(../img/icons/zigzag-line-black.svg) repeat-x;
+      width: 100%;
+      height: 17px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background: 0 0;
+    padding: 0;
+    padding-bottom: 90px;
+
+    &::before {
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

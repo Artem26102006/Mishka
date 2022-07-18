@@ -1,0 +1,89 @@
+.benefits-list {
+  .list-none();
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 33px;
+
+  @media (min-width: @tablet-width) {
+    row-gap: 57px;
+    column-gap: 30px;
+    grid-auto-flow: dense;
+  }
+
+  &__item {
+    margin: 0;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &--eco {
+      &::before {
+        content: url("../img/icons/ecological.svg");
+        display: block;
+        margin-bottom: 19px;
+      }
+    }
+
+    &--price {
+      &::before {
+        content: url("../img/icons/price.svg");
+        display: block;
+        margin-bottom: 32px;
+      }
+
+      @media (min-width: @tablet-width) {
+        grid-column: 1 / 2;
+      }
+    }
+
+    &--like {
+      &::before {
+        content: url(../img/icons/like.svg);
+        display: block;
+        margin-bottom: 26px;
+      }
+
+      @media (min-width: @tablet-width) {
+        grid-row: 3 / 4;
+      }
+    }
+
+    &--related {
+      &::before {
+        content: url(../img/icons/related.svg);
+        display: block;
+        margin-bottom: 21px;
+      }
+    }
+
+    &--support {
+      &::before {
+        content: url(../img/icons/support.svg);
+        display: block;
+        margin-bottom: 32px;
+      }
+
+      @media (min-width: @tablet-width) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+    }
+
+    &--gift {
+      &::before {
+        content: url(../img/icons/gift.svg);
+        display: block;
+        margin-bottom: 24px;
+      }
+
+      @media (min-width: @tablet-width) {
+        grid-column: 2 / 3;
+      }
+    }
+  }
+}
