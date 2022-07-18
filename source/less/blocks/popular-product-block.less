@@ -2,50 +2,51 @@
   position: relative;
   &__headline {
     position: relative;
-    margin-bottom: 1.285714285714286em;
+    margin-bottom: 18px;
 
     @media (min-width: @tablet-width) {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 2.533333333333333em;
+      margin-bottom: 38px;
     }
 
     @media (min-width: @desktop-width) {
       justify-content: flex-end;
       flex-direction: row-reverse;
-      padding-top: 4.066666666666667em;
-      margin-left: 2.333333333333333em;
-      column-gap: 2.866666666666667em;
+      margin-top: 61px;
+      margin-left: 35px;
+      column-gap: 45px;
       z-index: 2;
     }
   }
 
-  &__headline-title {
+  &__title {
     margin: 0;
-    font-size: 1.78571429rem;
+    font-size: 25px;
     line-height: 30px;
 
     @media (min-width: @tablet-width) {
-      font-size: 2.866666666666667rem;
+      font-size: 43px;
       line-height: 50px;
     }
 
     @media (min-width: @desktop-width) {
-      font-size: 3.533333333333333rem;
+      font-size: 53px;
       line-height: 57px;
     }
   }
 
-  &__headline-paragraph {
+  &__subtitle {
     margin: 0;
     line-height: 20px;
-    font-size: 1.21428571rem;
+    font-size: 17px;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--green);
 
     @media (min-width: @tablet-width) {
+      line-height: 17px;
       width: 100px;
       text-align: center;
     }

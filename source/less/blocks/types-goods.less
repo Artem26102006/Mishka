@@ -1,7 +1,7 @@
 .types-goods {
   .list-none();
   width: 100%;
-  font-size: 1.35714286rem;
+  font-size: 19px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
@@ -9,7 +9,8 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 
@@ -17,8 +18,7 @@
     background-color: var(--green);
 
     &--back-darker {
-      --green: #56c3b2;
-      background-color: var(--green);
+      background-color: var(--green-dark);
     }
   }
 

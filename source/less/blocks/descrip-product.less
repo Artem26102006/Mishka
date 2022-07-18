@@ -13,20 +13,20 @@
   &__paragraph {
     margin: 0;
     line-height: 24px;
-    font-size: 1.07142857rem;
+    font-size: 15px;
     margin-bottom: 28px;
-    grid-area: paragraph;
 
     @media (min-width: @tablet-width) {
-      font-size: 1.133333333333333rem;
+      font-size: 17px;
       line-height: 30px;
-      margin-bottom: 2.3em;
+      margin-bottom: 39px;
+      grid-area: paragraph;
     }
 
     @media (min-width: @desktop-width) {
       width: 292px;
-      margin-bottom: 2.588235294117647em;
-      margin-left: 10.88235294117647em;
+      margin-bottom: 44px;
+      margin-left: 175px;
     }
   }
 
@@ -34,13 +34,13 @@
     margin: 0;
     margin-top: 28px;
     margin-bottom: 26px;
-    grid-area: img;
 
     @media (min-width: @tablet-width) {
       margin: 0;
       padding-left: 38px;
       margin-left: auto;
       margin-top: auto;
+      grid-area: img;
     }
 
     @media (min-width: @desktop-width) {
@@ -70,7 +70,9 @@
   }
 
   &__characteristics {
-    grid-area: character;
+    @media (min-width: @tablet-width) {
+      grid-area: character;
+    }
 
     @media (min-width: @desktop-width) {
       width: 291px;
@@ -81,18 +83,21 @@
     color: var(--black-light);
     display: block;
     text-align: center;
-    font-size: 1.214285714285714rem;
+    margin: 0 auto;
+    font-size: 17px;
     font-weight: bold;
-    margin-bottom: 1.470588235294118em;
-    grid-area: price;
+    margin-bottom: 25px;
+    width: 154px;
 
     @media (min-width: @tablet-width) {
-      font-size: 1.333333333333333rem;
-      margin-top: 2.85em;
+      grid-area: price;
+      font-size: 20px;
+      width: 174px;
+      margin: 62px auto 33px;
     }
 
     @media (min-width: @desktop-width) {
-      margin: 5.5em 0 1.15em 6em;
+      margin: 110px 0 33px 234px;
     }
   }
 
@@ -100,15 +105,15 @@
     width: 100%;
     margin: 0 auto;
     max-width: 400px;
-    grid-area: button;
 
     @media (min-width: @tablet-width) {
+      grid-area: button;
       width: 292px;
       margin: 0 auto;
     }
 
     @media (min-width: @desktop-width) {
-      margin-left: 10.29411764705882em;
+      margin-left: 175px;
     }
   }
 }

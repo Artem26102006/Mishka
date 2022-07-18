@@ -10,7 +10,7 @@
     grid-auto-flow: dense;
   }
 
-  &__paragraph {
+  &__item {
     margin: 0;
     font-size: 1.21428571rem;
     line-height: 20px;
@@ -20,70 +20,70 @@
       font-size: 1.333333333333333rem;
       line-height: 22px;
     }
-  }
 
-  &__item-eco {
-    &::before {
-      content: url("../img/icons/ecological.svg");
-      display: block;
-      margin-bottom: 1.142857142857143em;
-    }
-  }
-
-  &__item-price {
-    &::before {
-      content: url("../img/icons/price.svg");
-      display: block;
-      margin-bottom: 1.857142857142857em;
+    &--eco {
+      &::before {
+        content: url("../img/icons/ecological.svg");
+        display: block;
+        margin-bottom: 1.142857142857143em;
+      }
     }
 
-    @media (min-width: @tablet-width) {
-      grid-column: 1 / 2;
-    }
-  }
+    &--price {
+      &::before {
+        content: url("../img/icons/price.svg");
+        display: block;
+        margin-bottom: 1.857142857142857em;
+      }
 
-  &__item-like {
-    &::before {
-      content: url(../img/icons/like.svg);
-      display: block;
-      margin-bottom: 1.5em;
-    }
-
-    @media (min-width: @tablet-width) {
-      grid-row: 3 / 4;
-    }
-  }
-
-  &__item-related {
-    &::before {
-      content: url(../img/icons/related.svg);
-      display: block;
-      margin-bottom: 1.214285714285714em;
-    }
-  }
-
-  &__item-support {
-    &::before {
-      content: url(../img/icons/support.svg);
-      display: block;
-      margin-bottom: 1.857142857142857em;
+      @media (min-width: @tablet-width) {
+        grid-column: 1 / 2;
+      }
     }
 
-    @media (min-width: @tablet-width) {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-    }
-  }
+    &--like {
+      &::before {
+        content: url(../img/icons/like.svg);
+        display: block;
+        margin-bottom: 1.5em;
+      }
 
-  &__item-gift {
-    &::before {
-      content: url(../img/icons/gift.svg);
-      display: block;
-      margin-bottom: 1.428571428571429em;
+      @media (min-width: @tablet-width) {
+        grid-row: 3 / 4;
+      }
     }
 
-    @media (min-width: @tablet-width) {
-      grid-column: 2 / 3;
+    &--related {
+      &::before {
+        content: url(../img/icons/related.svg);
+        display: block;
+        margin-bottom: 1.214285714285714em;
+      }
+    }
+
+    &--support {
+      &::before {
+        content: url(../img/icons/support.svg);
+        display: block;
+        margin-bottom: 1.857142857142857em;
+      }
+
+      @media (min-width: @tablet-width) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+    }
+
+    &--gift {
+      &::before {
+        content: url(../img/icons/gift.svg);
+        display: block;
+        margin-bottom: 1.428571428571429em;
+      }
+
+      @media (min-width: @tablet-width) {
+        grid-column: 2 / 3;
+      }
     }
   }
 }
