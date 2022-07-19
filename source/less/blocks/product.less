@@ -2,16 +2,44 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    justify-content: space-between;
+  }
+
   &__image {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @media (min-width: @desktop-width) {
+      width: 316px;
+      height: 462px;
+    }
   }
 
   &__descrip {
     padding: 28px;
     border: 1px solid var(--gray);
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column;
+      padding: 27px 33px 26px 34px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 197px;
+    }
   }
 
   &__title {
@@ -19,12 +47,25 @@
     font-size: 17px;
     line-height: 24px;
     color: var(--black);
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+    }
   }
 
   &__link {
     text-decoration: none;
     display: block;
     margin-bottom: 6px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      margin-bottom: 7px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 230px;
+    }
   }
 
   &__info {
@@ -33,6 +74,11 @@
     line-height: 30px;
     color: var(--black-light);
     margin-bottom: 18px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
   }
 
   &__purchase {
@@ -41,12 +87,36 @@
     justify-content: space-between;
     padding-top: 22px;
     border-top: 1px solid var(--gray);
+
+    @media (min-width: @tablet-width) {
+      margin-top: auto;
+      padding-top: 24px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 0;
+      border: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        top: -23px;
+        position: absolute;
+        background-color: var(--gray);
+      }
+    }
   }
 
   &__price {
     font-size: 15px;
     line-height: 24px;
     font-weight: bold;
+
+    @media (min-width: @tablet-width) {
+      font-size: 17px;
+    }
   }
 
   &__button {

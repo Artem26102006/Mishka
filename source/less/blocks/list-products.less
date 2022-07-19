@@ -7,9 +7,25 @@
     column-gap: 30px;
   }
 
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width)  {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__item {
     margin-bottom: 30px;
-    max-width: 550px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__item:last-child {
