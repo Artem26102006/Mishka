@@ -2,6 +2,14 @@
   background-color: var(--gray-back);
   padding: 73px 0;
 
+  @media (min-width: @tablet-width) {
+    padding: 57px 0 75px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 58px 0 96px 0;
+  }
+
   &__title {
     margin: 0;
     font-size: 27px;
@@ -13,7 +21,7 @@
       line-height: 50px;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       font-size: 53px;
       line-height: 57px;
     }

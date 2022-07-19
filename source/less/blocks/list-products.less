@@ -1,7 +1,18 @@
 .list-products {
   .list-none();
 
-  &__image {
-    display: block;
+  @media (min-width: 610px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    column-gap: 30px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    max-width: 550px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
   }
 }
