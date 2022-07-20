@@ -1,0 +1,39 @@
+.type {
+  &__line {
+    margin-bottom: 30px;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 11px;
+  }
+
+  &__title {
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--black);
+    font-weight: 700;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__input {
+    appearance: none;
+  }
+
+  &__control-mark {
+    position: relative;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: var(--white);
+    border: 2px solid var(--black-light);
+    border-radius: 50%;
+  }
+}
