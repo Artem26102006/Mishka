@@ -127,6 +127,11 @@
 
             <div class="descrip-product__image-block">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/product-desktop.webp, img/product-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-tablet.webp, img/product-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-mobile.webp, img/product-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="
                       img/product-desktop.jpg,
                       img/product-desktop@2x.jpg 2x
@@ -178,7 +183,7 @@
     </section>
 
     <section class="review">
-      <div class="container">
+      <div class="container review__container">
         <div class="review-wrapper">
           <h2 class="review-wrapper__title">Отзывы</h2>
           <p class="review-wrapper__paragraph">
@@ -202,42 +207,47 @@
             </button>
           </div>
 
-          <a href="#" class="button review-wrapper__button"> Написать </a>
+          <div class="review-wrapper__block-link">
+            <a href="#" class="button review-wrapper__link"> Написать </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="contacts">
       <div class="container contacts__container">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
+        <h2 class="contacts__title">Контакты</h2>
 
-          <dl class="data contacts__data">
-            <div class="data__block">
-              <dt class="data__title">e-mail:</dt>
-              <dd class="data__value">
-                <a href="mailto:info@mimimishkashop.ru" class="data__link-email">info@mimimishkashop.ru</a>
-              </dd>
-            </div>
-            <div class="data__block">
-              <dt class="data__title">адрес:</dt>
-              <dd class="data__value">
-                <address href="#" class="data__address">
-                  г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101
-                </address>
-              </dd>
-            </div>
-          </dl>
-          <div class="contacts__map">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x" />
-              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x" />
-              <img class="contacts__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="" />
-            </picture>
+        <dl class="data contacts__data">
+          <div class="data__block">
+            <dt class="data__title">e-mail:</dt>
+            <dd class="data__value">
+              <a href="mailto:info@mimimishkashop.ru" class="data__link-email">info@mimimishkashop.ru</a>
+            </dd>
           </div>
-
-          <a href="#" class="button contacts__button"> Напишите нам </a>
+          <div class="data__block">
+            <dt class="data__title">адрес:</dt>
+            <dd class="data__value">
+              <address href="#" class="data__address">
+                г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101
+              </address>
+            </dd>
+          </div>
+        </dl>
+        <div class="contacts__map">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x" />
+            <img class="contacts__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="" />
+          </picture>
         </div>
+
+        <a href="#" class="button contacts__button"> Напишите нам </a>
       </div>
     </section>
   </main>
