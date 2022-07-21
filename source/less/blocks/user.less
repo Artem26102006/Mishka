@@ -1,8 +1,15 @@
 .user {
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     display: flex;
     padding: 59px 50px 50px 50px;
     column-gap: 128px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 0 50px 62px;
+    column-gap: 80px;
   }
 
   &__line {
@@ -20,6 +27,11 @@
 
     @media (min-width: @tablet-width) {
       margin-top: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-direction: column;
+      width: 71%;
     }
   }
 
@@ -44,6 +56,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-grow: 0;
     }
   }
 

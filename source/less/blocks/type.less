@@ -1,8 +1,15 @@
 .type {
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     padding: 63px 50px 50px 50px;
     display: flex;
     column-gap: 135px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 63px 0 50px 62px;
+    column-gap: 80px;
   }
 
   &__line {
@@ -30,10 +37,8 @@
     color: var(--black);
     font-weight: 700;
     margin-left: 26px;
-    width: 200px;
 
     @media (min-width: @tablet-width) {
-      width: 260px;
       font-size: 19px;
     }
   }
@@ -41,6 +46,16 @@
   &__label {
     display: flex;
     align-items: center;
+    width: 260px;
+
+    @media (min-width: @tablet-width) {
+      width: 335px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 430px;
+    }
+
   }
 
   &__input {

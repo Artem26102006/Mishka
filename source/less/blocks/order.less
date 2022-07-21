@@ -1,9 +1,13 @@
 .order {
   padding: 17px 0 55px 0;
 
-  @media (min-width: @tablet-width) {
-    &__container {
+  &__container {
+    @media (min-width: @tablet-width) {
       padding: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: initial;
     }
   }
 
@@ -18,6 +22,11 @@
       font-size: 17px;
       line-height: 30px;
       margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 702px;
+      margin-left: 175px;
     }
   }
 }

@@ -1,8 +1,15 @@
 .color {
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     padding: 50px 50px 41px 50px;
     display: flex;
     column-gap: 123px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 48px 0 52px 62px;
+    column-gap: 80px;
   }
 
   &__line {
@@ -19,6 +26,7 @@
 
     @media (min-width: @tablet-width) {
       margin-top: 0;
+      column-gap: 57px;
     }
   }
 
@@ -28,18 +36,21 @@
     color: var(--black);
     font-weight: 700;
     margin-left: 23px;
-    width: 150px;
 
     @media (min-width: @tablet-width) {
       font-size: 19px;
       margin-left: 30px;
-      width: 166px;
     }
   }
 
   &__label {
     display: flex;
     align-items: center;
+    width: 260px;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+    }
   }
 
   &__input {
