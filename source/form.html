@@ -78,40 +78,127 @@
 
   <main class="main page-body__main">
     <header class="header">
-      <h1 class="header__title">
-        Вязание на заказ
-      </h1>
+      <h1 class="header__title">Вязание на заказ</h1>
     </header>
 
     <section class="order">
       <div class="container">
         <p class="order__paragraph">
-          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
-          уточнить детали.
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
 
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-
           <div class="type form__type">
             <div class="line type__line">
-              <h2 class="line__title">
-                Тип
-              </h2>
+              <h2 class="line__title">Тип</h2>
             </div>
             <div class="type__block">
               <label class="type__label">
-                <input type="radio" class="input type__input visually-hidden" name="button">
+                <input type="radio" class="type__input visually-hidden" name="button" />
                 <span class="type__control-mark"></span>
                 <span class="type__title">Аксессуар для интерьера</span>
               </label>
               <label class="type__label">
-                <input type="radio" class="input type__input visually-hidden" name="button">
+                <input type="radio" class="type__input visually-hidden" name="button" />
                 <span class="type__control-mark"></span>
                 <span class="type__title">Детская игрушка</span>
               </label>
             </div>
           </div>
 
+          <div class="color form__color">
+            <div class="line">
+              <h2 class="line__title">Цвет</h2>
+            </div>
+            <div class="color__block">
+              <label class="color__label">
+                <input type="checkbox" class="color__input visually-hidden" name="button" />
+                <span class="color__control-mark"></span>
+                <span class="color__title">Белый</span>
+              </label>
+
+              <label class="color__label">
+                <input type="checkbox" class="color__input visually-hidden" name="button" />
+                <span class="color__control-mark"></span>
+                <span class="color__title">Серый</span>
+              </label>
+
+              <label class="color__label">
+                <input type="checkbox" class="color__input visually-hidden" name="button" />
+                <span class="color__control-mark"></span>
+                <span class="color__title">Тиффани</span>
+              </label>
+
+              <label class="color__label">
+                <input type="checkbox" class="color__input visually-hidden" name="button" />
+                <span class="color__control-mark"></span>
+                <span class="color__title">Черный</span>
+              </label>
+
+              <label class="color__label">
+                <input type="checkbox" class="color__input visually-hidden" name="button" />
+                <span class="color__control-mark"></span>
+                <span class="color__title">Розовый</span>
+              </label>
+
+              <label class="color__label">
+                <input type="checkbox" class="color__input visually-hidden" name="button" />
+                <span class="color__control-mark"></span>
+                <span class="color__title">Оранжевый</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="user form__user">
+            <div class="line type__line">
+              <h2 class="line__title">ФИО</h2>
+            </div>
+            <div class="user__block">
+              <label class="user__label">
+                <span class="user__title">Имя:</span>
+                <input type="text" class="input user__input" placeholder="Введите ваше имя*" />
+              </label>
+              <label class="user__label">
+                <span class="user__title">Фамилия:</span>
+                <input type="text" class="input user__input" placeholder="Укажите фамилию*" />
+              </label>
+              <label class="user__label">
+                <span class="user__title">Отчество:</span>
+                <input type="text" class="input user__input" placeholder="Отчество, если желаете" />
+              </label>
+            </div>
+          </div>
+
+          <div class="user-data form__user-data">
+            <div class="user-data__block">
+              <label class="user-data__label">
+                <div class="line type__line">
+                  <h2 class="line__title">Тел</h2>
+                </div>
+                <input type="tel" class="input user-data__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" />
+              </label>
+
+              <label class="user-data__label">
+                <div class="line type__line">
+                  <h2 class="line__title">E-mail</h2>
+                </div>
+                <input type="email" class="input user-data__input" placeholder="Ваш Email*" />
+              </label>
+            </div>
+          </div>
+
+          <div class="extra form__extra">
+            <div class="line extra__line">
+              <h2 class="line__title">Доп</h2>
+            </div>
+            <textarea class="extra__text"></textarea>
+          </div>
+
+          <div class="form__submission">
+            <span class="form__notice">*Поля обязательны для заполнения</span>
+            <button class="button form__button">Отправить заказ</button>
+          </div>
         </form>
       </div>
     </section>
