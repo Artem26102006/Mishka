@@ -1,9 +1,25 @@
 .color {
+  @media (min-width: @tablet-width) {
+    padding: 50px 50px 41px 50px;
+    display: flex;
+    column-gap: 123px;
+  }
+
+  &__line {
+    @media (min-width: @tablet-width) {
+      margin-top: 15px;
+    }
+  }
+
   &__block {
     display: flex;
     flex-wrap: wrap;
     row-gap: 23px;
     margin-top: 25px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
   }
 
   &__title {
@@ -13,6 +29,12 @@
     font-weight: 700;
     margin-left: 23px;
     width: 150px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+      margin-left: 30px;
+      width: 166px;
+    }
   }
 
   &__label {
@@ -32,6 +54,12 @@
     height: 38px;
     flex: none;
     background: var(--white);
-    border: 2px solid rgb(0 0 0);
+    border: 2px solid var(--black);
+
+    @media (min-width: @tablet-width) {
+      width: 52px;
+      height: 52px;
+      background-color: var(--gray-back-light);
+    }
   }
 }

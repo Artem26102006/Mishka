@@ -1,15 +1,47 @@
 .user-data {
+  @media (min-width: @tablet-width) {
+    padding: 50px;
+  }
+
+  &__line {
+    @media (min-width: @tablet-width) {
+      margin-top: 15px;
+    }
+  }
+
   &__block {
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    @media (min-width: 1000px) {
+      flex-direction: row;
+      gap: 55px;
+    }
   }
 
   &__label {
     flex-grow: 1;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__input {
     width: 100%;
+
+    @media (min-width: @tablet-width) {
+      background-color: var(--gray-back-light);
+      width: 75%;
+    }
   }
 }

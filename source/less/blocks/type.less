@@ -1,10 +1,27 @@
 .type {
+  @media (min-width: @tablet-width) {
+    padding: 63px 50px 50px 50px;
+    display: flex;
+    column-gap: 135px;
+  }
+
+  &__line {
+    @media (min-width: @tablet-width) {
+      margin-top: 15px;
+    }
+  }
+
   &__block {
     display: flex;
     flex-wrap: wrap;
     column-gap: 25px;
     row-gap: 15px;
     margin-top: 31px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+      row-gap: 24px;
+    }
   }
 
   &__title {
@@ -12,8 +29,13 @@
     line-height: 18px;
     color: var(--black);
     font-weight: 700;
-    margin-left: 19px;
+    margin-left: 26px;
     width: 200px;
+
+    @media (min-width: @tablet-width) {
+      width: 260px;
+      font-size: 19px;
+    }
   }
 
   &__label {
@@ -35,5 +57,10 @@
     background: var(--white);
     border: 2px solid rgb(0 0 0);
     border-radius: 50%;
+
+    @media (min-width: @tablet-width) {
+      width: 52px;
+      height: 52px;
+    }
   }
 }

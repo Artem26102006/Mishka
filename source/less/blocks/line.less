@@ -1,6 +1,10 @@
 .line {
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    height: fit-content;
+  }
+
   &__title {
     margin: 0;
     color: var(--green);
@@ -12,6 +16,14 @@
     padding-right: 23px;
     background-color: var(--white);
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+
+      &--gray {
+        background-color: var(--gray-light-back);
+      }
+    }
   }
 
   &::before {
@@ -22,5 +34,9 @@
     background-color: var(--green);
     top: 50%;
     transform: translateY(-50%);
+
+    @media (min-width: @tablet-width) {
+      content: none;
+    }
   }
 }

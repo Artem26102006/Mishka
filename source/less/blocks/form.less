@@ -1,22 +1,58 @@
 .form {
+  @media (min-width: @tablet-width) {
+    &__background {
+      background-color: var(--gray-back-light);
+    }
+  }
+
   &__type {
     margin-bottom: 31px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__color {
     margin-bottom: 33px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__user {
     margin-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__user-data {
     margin-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__extra {
     margin-bottom: 17px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__submission {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 50px;
+    }
   }
 
   &__notice {
@@ -26,9 +62,20 @@
     line-height: 16px;
     color: var(--black-light);
     margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      text-align: start;
+      font-size: 17px;
+      line-height: 30px;
+      margin: 0;
+    }
   }
 
   &__button {
     width: 100%;
+
+    @media (min-width: @tablet-width) {
+      width: 34.5%;
+    }
   }
 }

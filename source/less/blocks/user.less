@@ -1,4 +1,15 @@
 .user {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding: 59px 50px 50px 50px;
+    column-gap: 128px;
+  }
+
+  &__line {
+    @media (min-width: @tablet-width) {
+      margin-top: 20px;
+    }
+  }
 
   &__block {
     margin-top: 29px;
@@ -6,6 +17,10 @@
     flex-wrap: wrap;
     row-gap: 22px;
     column-gap: 45px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
   }
 
   &__title {
@@ -13,11 +28,28 @@
     line-height: 18px;
     color: var(--black);
     font-weight: 700;
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+      margin-right: 25px;
+    }
   }
 
   &__label {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__input {
+    @media (min-width: @tablet-width) {
+      flex-grow: 1;
+    }
   }
 }
