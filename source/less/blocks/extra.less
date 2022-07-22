@@ -1,8 +1,15 @@
 .extra {
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     padding: 50px 50px 53px 50px;
     display: flex;
     column-gap: 129px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 0 50px 62px;
+    column-gap: 85px;
   }
 
   &__text {

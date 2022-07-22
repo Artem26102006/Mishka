@@ -1,6 +1,12 @@
 .user-data {
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     padding: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 165px 50px 62px;
   }
 
   &__line {
@@ -24,6 +30,11 @@
       flex-direction: row;
       gap: 55px;
     }
+
+    @media (min-width: @desktop-width) {
+      flex-direction: column;
+      row-gap: 24px;
+    }
   }
 
   &__label {
@@ -42,6 +53,10 @@
     @media (min-width: @tablet-width) {
       background-color: var(--gray-back-light);
       width: 75%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 700px;
     }
   }
 }
