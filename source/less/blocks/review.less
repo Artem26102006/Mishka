@@ -1,11 +1,9 @@
 .review {
-  padding-bottom: 3.214285714285714em;
+  padding-bottom: 45px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    background: url("../img/back-image-review.jpg") no-repeat;
-    padding-top: 5.533333333333333em;
-    padding-bottom: 10.8em;
+    padding-bottom: 80px;
 
     &::before {
       content: "";
@@ -14,6 +12,13 @@
       height: 17px;
       position: absolute;
       bottom: 0;
+    }
+
+    &__container {
+      background: url("../img/back-image-review.jpg") no-repeat;
+      padding-top: 83px;
+      padding-bottom: 47px;
+      background-size: contain;
     }
   }
 
@@ -28,6 +33,11 @@
       background-size: 1050px;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    &__container {
+      padding-top: 78px;
+      padding-bottom: 96px;
     }
   }
 }

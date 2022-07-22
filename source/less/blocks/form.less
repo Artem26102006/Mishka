@@ -1,0 +1,125 @@
+.form {
+  @media (min-width: @tablet-width) {
+    &__background {
+      background-color: var(--gray-back-light);
+    }
+  }
+
+  &__type {
+    margin-bottom: 31px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+  }
+
+  &__color {
+    margin-bottom: 33px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+  }
+
+  &__user {
+    margin-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+  }
+
+  &__user-data {
+    margin-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+  }
+
+  &__extra {
+    margin-bottom: 17px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+  }
+
+  &__submission {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 1050px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0;
+      justify-content: space-between;
+      padding-left: 187px;
+      padding-right: 160px;
+    }
+  }
+
+  &__notice {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black-light);
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      text-align: start;
+      font-size: 17px;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 330px;
+      text-align: end;
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    @media (min-width: @tablet-width) {
+      width: 34.5%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 230px;
+    }
+  }
+}

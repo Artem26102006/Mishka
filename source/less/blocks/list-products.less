@@ -1,0 +1,36 @@
+.list-products {
+  .list-none();
+
+  @media (min-width: 610px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    column-gap: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width)  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+}
