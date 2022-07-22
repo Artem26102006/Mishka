@@ -78,6 +78,16 @@
       align-items: center;
       padding: 0 50px;
     }
+
+    @media (min-width: @desktop-width) {
+      max-width: 1050px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0;
+      justify-content: space-between;
+      padding-left: 187px;
+      padding-right: 160px;
+    }
   }
 
   &__notice {
@@ -94,6 +104,11 @@
       line-height: 30px;
       margin: 0;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 330px;
+      text-align: end;
+    }
   }
 
   &__button {
@@ -101,6 +116,10 @@
 
     @media (min-width: @tablet-width) {
       width: 34.5%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 230px;
     }
   }
 }

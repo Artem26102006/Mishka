@@ -35,7 +35,7 @@
             </a>
           </li>
           <li class="menu__item main-menu__item">
-            <a href="#" class="menu__link main-menu__link">
+            <a class="menu__link main-menu__link">
               Вязание на заказ
             </a>
           </li>
@@ -96,12 +96,12 @@
             </div>
             <div class="type__block">
               <label class="type__label">
-                <input type="radio" class="type__input visually-hidden" name="button" />
+                <input type="radio" class="type__input visually-hidden" name="type" value="accessory"/>
                 <span class="type__control-mark"></span>
                 <span class="type__title">Аксессуар для интерьера</span>
               </label>
               <label class="type__label">
-                <input type="radio" class="type__input visually-hidden" name="button" />
+                <input type="radio" class="type__input visually-hidden" name="type" value="toy"/>
                 <span class="type__control-mark"></span>
                 <span class="type__title">Детская игрушка</span>
               </label>
@@ -115,37 +115,37 @@
               </div>
               <div class="color__block">
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="button" />
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="white"/>
                   <span class="color__control-mark"></span>
                   <span class="color__title">Белый</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="button" />
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="gray"/>
                   <span class="color__control-mark"></span>
                   <span class="color__title">Серый</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="button" />
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="tiffany"/>
                   <span class="color__control-mark"></span>
                   <span class="color__title">Тиффани</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="button" />
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="black"/>
                   <span class="color__control-mark"></span>
                   <span class="color__title">Черный</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="button" />
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="pink"/>
                   <span class="color__control-mark"></span>
                   <span class="color__title">Розовый</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="button" />
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="orange"/>
                   <span class="color__control-mark"></span>
                   <span class="color__title">Оранжевый</span>
                 </label>
@@ -160,15 +160,15 @@
             <div class="user__block">
               <label class="user__label">
                 <span class="user__title">Имя:</span>
-                <input type="text" class="input user__input" placeholder="Введите ваше имя*" />
+                <input type="text" class="input user__input" placeholder="Введите ваше имя*" name="name" required/>
               </label>
               <label class="user__label">
                 <span class="user__title">Фамилия:</span>
-                <input type="text" class="input user__input" placeholder="Укажите фамилию*" />
+                <input type="text" class="input user__input" placeholder="Укажите фамилию*" name="surname" required/>
               </label>
               <label class="user__label">
                 <span class="user__title">Отчество:</span>
-                <input type="text" class="input user__input" placeholder="Отчество, если желаете" />
+                <input type="text" class="input user__input" name="patronymic" placeholder="Отчество, если желаете"/>
               </label>
             </div>
           </div>
@@ -177,17 +177,17 @@
             <div class="user-data form__user-data">
               <div class="user-data__block">
                 <label class="user-data__label">
-                  <div class="line user-data__line">
-                    <h2 class="line__title line__title--gray">Тел</h2>
-                  </div>
-                  <input type="tel" class="input user-data__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" />
+                  <span class="line user-data__line">
+                    <span class="line__title line__title--gray">Тел</span>
+                  </span>
+                  <input type="tel" class="input user-data__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required/>
                 </label>
 
                 <label class="user-data__label">
-                  <div class="line user-data__line">
-                    <h2 class="line__title line__title--gray">E-mail</h2>
-                  </div>
-                  <input type="email" class="input user-data__input" placeholder="Ваш Email*" />
+                  <span class="line user-data__line">
+                    <span class="line__title line__title--gray">E-mail</span>
+                  </span>
+                  <input type="email" class="input user-data__input" placeholder="Ваш Email*" name="email" required/>
                 </label>
               </div>
             </div>
@@ -211,7 +211,7 @@
 
   <footer class="footer page-body__footer">
     <div class="container footer__wrapper">
-      <a href="#" class="footer__icon-link">
+      <a href="index.html" class="footer__icon-link">
         <svg width="102" height="34" class="footer__icon">
           <use href="img/sprite.svg#logo-footer"></use>
         </svg>
