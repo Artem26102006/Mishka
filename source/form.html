@@ -96,12 +96,12 @@
             </div>
             <div class="type__block">
               <label class="type__label">
-                <input type="radio" class="type__input visually-hidden" name="type" value="accessory"/>
+                <input type="radio" class="type__input visually-hidden" name="type" value="accessory" />
                 <span class="type__control-mark"></span>
                 <span class="type__title">Аксессуар для интерьера</span>
               </label>
               <label class="type__label">
-                <input type="radio" class="type__input visually-hidden" name="type" value="toy"/>
+                <input type="radio" class="type__input visually-hidden" name="type" value="toy" />
                 <span class="type__control-mark"></span>
                 <span class="type__title">Детская игрушка</span>
               </label>
@@ -115,37 +115,37 @@
               </div>
               <div class="color__block">
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="color" value="white"/>
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="white" />
                   <span class="color__control-mark"></span>
                   <span class="color__title">Белый</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="color" value="gray"/>
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="gray" />
                   <span class="color__control-mark"></span>
                   <span class="color__title">Серый</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="color" value="tiffany"/>
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="tiffany" />
                   <span class="color__control-mark"></span>
                   <span class="color__title">Тиффани</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="color" value="black"/>
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="black" />
                   <span class="color__control-mark"></span>
                   <span class="color__title">Черный</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="color" value="pink"/>
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="pink" />
                   <span class="color__control-mark"></span>
                   <span class="color__title">Розовый</span>
                 </label>
 
                 <label class="color__label">
-                  <input type="checkbox" class="color__input visually-hidden" name="color" value="orange"/>
+                  <input type="checkbox" class="color__input visually-hidden" name="color" value="orange" />
                   <span class="color__control-mark"></span>
                   <span class="color__title">Оранжевый</span>
                 </label>
@@ -160,15 +160,15 @@
             <div class="user__block">
               <label class="user__label">
                 <span class="user__title">Имя:</span>
-                <input type="text" class="input user__input" placeholder="Введите ваше имя*" name="name" required/>
+                <input type="text" class="input user__input" placeholder="Введите ваше имя*" name="name" required />
               </label>
               <label class="user__label">
                 <span class="user__title">Фамилия:</span>
-                <input type="text" class="input user__input" placeholder="Укажите фамилию*" name="surname" required/>
+                <input type="text" class="input user__input" placeholder="Укажите фамилию*" name="surname" required />
               </label>
               <label class="user__label">
                 <span class="user__title">Отчество:</span>
-                <input type="text" class="input user__input" name="patronymic" placeholder="Отчество, если желаете"/>
+                <input type="text" class="input user__input" name="patronymic" placeholder="Отчество, если желаете" />
               </label>
             </div>
           </div>
@@ -180,14 +180,27 @@
                   <span class="line user-data__line">
                     <span class="line__title line__title--gray">Тел</span>
                   </span>
-                  <input type="tel" class="input user-data__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required/>
+
+                  <div class="user-data__input">
+                    <input type="tel" class="input input--gray" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required />
+
+                    <svg width="25" height="24" class="user-data__phone">
+                      <use href="img/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
                 </label>
 
                 <label class="user-data__label">
                   <span class="line user-data__line">
                     <span class="line__title line__title--gray">E-mail</span>
                   </span>
-                  <input type="email" class="input user-data__input" placeholder="Ваш Email*" name="email" required/>
+                  <div class="user-data__input">
+                    <input type="email" class="input input--gray" placeholder="Ваш Email*" name="email" required />
+
+                    <svg width="32" height="21" class="user-data__email">
+                      <use href="img/sprite.svg#mail"></use>
+                    </svg>
+                  </div>
                 </label>
               </div>
             </div>

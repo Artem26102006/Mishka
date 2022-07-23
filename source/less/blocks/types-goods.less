@@ -2,20 +2,17 @@
   .list-none();
   width: 100%;
   font-size: 19px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   background-color: var(--green);
 
-  @media (min-width: 550px) {
+  @media (min-width: 500px) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
   }
 
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
 
   &__item {
+
     &:hover {
       transform: translateY(-7px);
     }

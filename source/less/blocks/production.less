@@ -66,18 +66,28 @@
 
   &__button-replay {
     padding: 0;
-    border: none;
+    border: 0;
     position: absolute;
     z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: url(../img/icons/sprite/play.svg) no-repeat;
+    width: 101px;
+    height: 77px;
+    background-size: 101px 77px;
 
-    @media (min-width: @tablet-width) {
-      svg {
-        width: 102px;
-        height: 78px;
-      }
+    &:hover {
+      width: 121px;
+      height: 92px;
+      background-size: 121px 92px;
+    }
+
+    &:active {
+      width: 81px;
+      height: 62px;
+      background-size: 81px 62px;
+      opacity: 0.7;
     }
   }
 

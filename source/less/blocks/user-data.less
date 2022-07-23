@@ -49,14 +49,66 @@
 
   &__input {
     width: 100%;
+    position: relative;
+
+    &:hover {
+      svg {
+        fill: var(--green);
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: var(--green-hover);
+        opacity: 1;
+      }
+    }
 
     @media (min-width: @tablet-width) {
-      background-color: var(--gray-back-light);
       width: 75%;
     }
 
     @media (min-width: @desktop-width) {
       width: 700px;
+    }
+  }
+
+  &__phone {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7px;
+    opacity: 0.2;
+
+    @media (min-width: @tablet-width) {
+      right: 26px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 8px;
+    }
+  }
+
+  &__email {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3px;
+    opacity: 0.2;
+
+    @media (min-width: @tablet-width) {
+      right: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 4px;
     }
   }
 }

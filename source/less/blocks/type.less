@@ -55,7 +55,6 @@
     @media (min-width: @desktop-width) {
       width: 430px;
     }
-
   }
 
   &__input {
@@ -77,5 +76,39 @@
       width: 52px;
       height: 52px;
     }
+  }
+}
+
+.type__input[type="radio"]:checked + .type__control-mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background-color: var(--green);
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.color__input[type="checkbox"]:checked + .color__control-mark::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icons/check-mark.svg") no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: 23px 16px;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 32px;
+    height: 22px;
+    background-size: 32px 22px;
   }
 }

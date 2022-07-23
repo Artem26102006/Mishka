@@ -23,6 +23,15 @@
     font-size: 17px;
     line-height: 18px;
     resize: none;
+    outline: none;
+
+    &:hover {
+      border: 2px solid var(--green);
+    }
+
+    &:active {
+      border: 2px solid var(--green-hover);
+    }
 
     @media (min-width: @tablet-width) {
       margin: 0;
