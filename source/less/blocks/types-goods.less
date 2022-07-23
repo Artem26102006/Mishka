@@ -4,6 +4,7 @@
   font-size: 19px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background-color: var(--green);
 
   @media (min-width: 550px) {
     grid-template-columns: 1fr 1fr;
@@ -15,21 +16,29 @@
   }
 
   &__item {
-    background-color: var(--green);
-
-    &--back-darker {
-      background-color: var(--green-dark);
+    &:hover {
+      transform: translateY(-7px);
     }
   }
 
   &__link {
     color: var(--white);
     text-decoration: none;
-    display: block;
-    padding: 24px 0 31px 30px;
+    display: flex;
+    padding-left: 30px;
+    padding: 24px 36px 31px 30px;
+    background-color: var(--green);
+
+    &--back-darker {
+      background-color: var(--green-dark);
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 25px 36px 34px 37px;
+    }
   }
 
-  &__link-interior {
+  &__link--interior {
     position: relative;
 
     &::after {
@@ -44,7 +53,7 @@
     }
   }
 
-  &__link-toy {
+  &__link--toy {
     position: relative;
 
     &::after {
@@ -62,5 +71,11 @@
   &__span {
     display: block;
     width: 130px;
+    font-weight: 700;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

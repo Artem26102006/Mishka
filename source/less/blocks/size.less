@@ -9,6 +9,11 @@
     color: var(--black-light);
     text-align: center;
     margin-bottom: 22px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
   }
 
   &__block {
@@ -22,6 +27,14 @@
     display: flex;
     height: 52px;
     border: 2px solid var(--gray);
+
+    &:hover {
+      border: 2px solid var(--shadow);
+    }
+
+    &:active {
+      border: 2px solid var(--green);
+    }
 
     &--small {
       &::before {
