@@ -1,5 +1,6 @@
 .popular-product-block {
   position: relative;
+
   &__headline {
     position: relative;
     margin-bottom: 18px;
@@ -50,5 +51,15 @@
       width: 100px;
       text-align: center;
     }
+  }
+
+  &__popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    animation-duration: 0.4s;
   }
 }
