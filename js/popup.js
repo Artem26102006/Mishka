@@ -9,4 +9,3 @@ button_show.addEventListener('click', function(){
 button_unshow.addEventListener('click', function(){
   popup.style.display = 'none';
 })
-
