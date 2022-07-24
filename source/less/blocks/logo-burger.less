@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 22px 0;
+  padding: 22px 30px;
   position: relative;
   background-color: var(--white);
 
@@ -23,11 +23,23 @@
     background-color: transparent;
     cursor: pointer;
 
-    &::before {
-      content: url("../img/icons/menu-open.svg");
-      display: block;
-      width: 20px;
-      height: 14px;
+
+    &--open {
+      &::before {
+        content: url("../img/icons/menu-open.svg");
+        display: block;
+        width: 20px;
+        height: 14px;
+      }
+    }
+
+    &--close {
+      &::before {
+        content: url("../img/icons/menu-close.svg");
+        display: block;
+        width: 21px;
+        height: 20px;
+      }
     }
 
     @media (min-width: @tablet-width) {
