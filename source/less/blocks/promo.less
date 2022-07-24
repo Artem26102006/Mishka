@@ -62,7 +62,11 @@
     background-position: center -9%;
     background-repeat: no-repeat;
 
-    
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-image-mobile@2x.jpg") no-repeat;
+      background-size: 320px auto;
+      background-position: center -9%;
+    }
 
     @media (min-width: 500px) and (max-width: @tablet-width) {
       min-height: 400px;
@@ -74,8 +78,14 @@
       padding-right: 50px;
       background-image: url(../img/back-image.jpg);
       background-size: 768px 746px;
-      background-position: center;
+      background-position: center -50px;
       background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/back-image@2x.jpg") no-repeat;
+        background-size: 768px auto;
+        background-position: center -50px;
+      }
     }
 
     @media (min-width: @desktop-width) {

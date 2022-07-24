@@ -11,8 +11,39 @@
       flex-grow: 1;
     }
 
-    &__span {
-      display: none;
+    &__link {
+      svg {
+        opacity: 0.2;
+      }
+
+      &:hover {
+        svg {
+          opacity: 1;
+          fill: var(--green);
+        }
+
+        span {
+          opacity: 0.6;
+        }
+      }
+
+      &:active {
+        svg {
+          opacity: 0.3;
+          fill: var(--green);
+        }
+
+        span {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    &__search {
+      position: relative;
+      padding: 44px 40px;
+      border-left: 1px solid var(--gray);
+      border-right: 1px solid var(--gray);
     }
 
     &__icon-search {
@@ -22,20 +53,13 @@
       transform: translate(-50%, -50%);
     }
 
-    &__link-basket {
+    &__basket {
       padding: 20px 0;
     }
 
-    &__basket {
+    &__icon-basket {
       margin-right: 31px;
       margin-left: 33px;
-    }
-
-    &__search {
-      position: relative;
-      padding: 44px 40px;
-      border-left: 1px solid var(--gray);
-      border-right: 1px solid var(--gray);
     }
   }
 

@@ -16,12 +16,38 @@
   text-decoration: none;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: var(--black-light);
+    color: var(--white);
+  }
+
+  &:active {
+    background-color: var(--black-light);
+
+    span {
+      opacity: 0.3;
+    }
+  }
+
   &--secondary {
     background-color: var(--green);
     color: var(--white);
     border: none;
     padding: 18px 0;
     font-size: 17px;
+
+    &:hover {
+      background-color: var(--green);
+      color: var(--white);
+    }
+
+    &:active {
+      background-color: var(--green);
+
+      span {
+        opacity: 0.3;
+      }
+    }
   }
 
   @media (min-width: @tablet-width) {

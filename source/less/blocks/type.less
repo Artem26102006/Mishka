@@ -48,6 +48,12 @@
     align-items: center;
     width: 260px;
 
+    &:hover {
+      .type__control-mark {
+        border: 2px solid var(--green);
+      }
+    }
+
     @media (min-width: @tablet-width) {
       width: 335px;
     }
@@ -69,7 +75,7 @@
     flex: none;
     height: 42px;
     background: var(--white);
-    border: 2px solid rgb(0 0 0);
+    border: 2px solid var(--black);
     border-radius: 50%;
 
     @media (min-width: @tablet-width) {
