@@ -37,6 +37,15 @@
       background-color: var(--white);
     }
 
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: var(--gray);
+      transform: rotate(90deg);
+    }
+
     &__link {
       padding: 33px 0 32px 0;
     }
