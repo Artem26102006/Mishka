@@ -74,3 +74,22 @@
     }
   }
 }
+
+.color__input[type="checkbox"]:checked + .color__control-mark::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icons/check-mark.svg") no-repeat;
+  top: 50%;
+  left: 50%;
+  width: 23px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  background-size: 23px 16px;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 32px;
+    height: 22px;
+    background-size: 32px 22px;
+  }
+}

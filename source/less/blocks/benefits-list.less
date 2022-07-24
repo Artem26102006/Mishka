@@ -5,9 +5,9 @@
   gap: 33px;
 
   @media (min-width: @tablet-width) {
-    row-gap: 57px;
-    column-gap: 30px;
-    grid-auto-flow: dense;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__item {
@@ -19,6 +19,7 @@
     @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 22px;
+      width: 47%;
     }
 
     &--eco {
@@ -26,6 +27,10 @@
         content: url("../img/icons/ecological.svg");
         display: block;
         margin-bottom: 19px;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 1;
       }
     }
 
@@ -37,7 +42,7 @@
       }
 
       @media (min-width: @tablet-width) {
-        grid-column: 1 / 2;
+        order: 3;
       }
     }
 
@@ -49,7 +54,7 @@
       }
 
       @media (min-width: @tablet-width) {
-        grid-row: 3 / 4;
+        order: 5;
       }
     }
 
@@ -58,6 +63,10 @@
         content: url(../img/icons/related.svg);
         display: block;
         margin-bottom: 21px;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 2;
       }
     }
 
@@ -69,8 +78,7 @@
       }
 
       @media (min-width: @tablet-width) {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
+        order: 4;
       }
     }
 
@@ -82,7 +90,7 @@
       }
 
       @media (min-width: @tablet-width) {
-        grid-column: 2 / 3;
+        order: 6;
       }
     }
   }
