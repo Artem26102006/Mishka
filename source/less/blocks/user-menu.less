@@ -1,113 +1,10 @@
 .user-menu {
-  &__search {
-    position: relative;
-  }
-
-  &__icon-search {
-    position: absolute;
-    left: 32px;
-  }
-
-  &__basket {
-    position: relative;
-  }
-
-  &__icon-basket {
-    position: absolute;
-    left: 32px;
-  }
-
-  &__link {
-    svg {
-      opacity: 0.2;
-    }
-
-    &:hover {
-      svg {
-        opacity: 1;
-        fill: var(--green);
-      }
-
-      .user-menu__span {
-        opacity: 0.6;
-      }
-    }
-
-    &:active {
-      svg {
-        opacity: 0.3;
-        fill: var(--green);
-      }
-
-      .user-menu__span {
-        opacity: 0.3;
-      }
-    }
-  }
-
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     position: relative;
     background-color: var(--white);
     padding-right: 50px;
-
-    &__span {
-      &--hidden {
-        .visually-hidden();
-      }
-    }
-
-    &__item {
-      flex-grow: 1;
-    }
-
-    &__search {
-      position: relative;
-      padding: 44px 40px;
-      // border-left: 1px solid var(--gray);
-      // border-right: 1px solid var(--gray);
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        background-color: var(--gray);
-        left: 0;
-        top: 0;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        background-color: var(--gray);
-        right: 0;
-        top: 0;
-      }
-    }
-
-    &__icon-search {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &__basket {
-      padding: 35px 0 0 0;
-      min-height: 88px;
-      box-sizing: border-box;
-    }
-
-    &__icon-basket {
-      position: static;
-      margin-right: 31px;
-      margin-left: 33px;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -121,6 +18,117 @@
       width: calc(50vw - 526px);
       height: 100%;
       background-color: var(--white);
+    }
+  }
+}
+
+.user-menu__span {
+  @media (min-width: @tablet-width) {
+    &--hidden {
+      .visually-hidden();
+    }
+  }
+}
+
+.user-menu__item {
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+  }
+}
+
+.user-menu__item-search {
+  @media (min-width: @tablet-width) {
+    width: 88px;
+    flex: none;
+    box-sizing: border-box;
+  }
+}
+
+.user-menu__search {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: var(--gray);
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: var(--gray);
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.user-menu__icon-search {
+  position: absolute;
+  left: 32px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.user-menu__basket {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 35px 0 0 0;
+    min-height: 88px;
+    box-sizing: border-box;
+  }
+}
+
+.user-menu__icon-basket {
+  position: absolute;
+  left: 32px;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    margin-right: 31px;
+    margin-left: 33px;
+  }
+}
+
+.user-menu__link {
+  svg {
+    opacity: 0.2;
+  }
+
+  &:hover {
+    svg {
+      opacity: 1;
+      fill: var(--green);
+    }
+
+    .user-menu__span {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+      fill: var(--green);
+    }
+
+    .user-menu__span {
+      opacity: 0.3;
     }
   }
 }

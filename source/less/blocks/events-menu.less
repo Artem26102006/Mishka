@@ -1,6 +1,4 @@
 .events-menu {
-  display: none;
-
   @media (min-width: @desktop-width) {
     display: flex;
     position: relative;
@@ -8,17 +6,17 @@
     align-items: center;
     column-gap: 65px;
     background-color: var(--gray-back);
+  }
+}
 
-    &__link {
-      padding: 19px 0;
+.events-menu__link {
+  padding: 19px 0;
 
-      &:hover {
-        opacity: 0.6;
-      }
+  &:hover {
+    opacity: 0.6;
+  }
 
-      &:active {
-        opacity: 0.3;
-      }
-    }
+  &:active {
+    opacity: 0.3;
   }
 }

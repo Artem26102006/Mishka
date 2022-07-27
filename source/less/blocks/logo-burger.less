@@ -14,63 +14,63 @@
   @media (min-width: @desktop-width) {
     padding: 9px 0 7px 0;
   }
+}
 
-  &__button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
+.logo-burger__button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 
 
-    &--open {
-      &::before {
-        content: url("../img/icons/menu-open.svg");
-        display: block;
-        width: 20px;
-        height: 14px;
-      }
-    }
-
-    &--close {
-      &::before {
-        content: url("../img/icons/menu-close.svg");
-        display: block;
-        width: 21px;
-        height: 20px;
-      }
-    }
-
-    @media (min-width: @tablet-width) {
-      display: none;
+  &--open {
+    &::before {
+      content: url("../img/icons/menu-open.svg");
+      display: block;
+      width: 20px;
+      height: 14px;
     }
   }
 
-  &__main-link {
-    display: block;
-    width: 86px;
-    height: 35px;
+  &--close {
+    &::before {
+      content: url("../img/icons/menu-close.svg");
+      display: block;
+      width: 21px;
+      height: 20px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.logo-burger__main-link {
+  display: block;
+  width: 86px;
+  height: 35px;
+  margin: 0 auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 149px;
+    height: 72px;
     margin: 0 auto;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    @media (min-width: @tablet-width) {
-      margin: 0;
-      width: 113px;
-      height: 46px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 149px;
-      height: 72px;
-      margin: 0 auto;
-    }
   }
 }

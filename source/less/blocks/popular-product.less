@@ -27,3 +27,29 @@
     }
   }
 }
+
+.popular-product__container {
+  position: relative;
+}
+
+.popular-product__headline {
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width)  {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width)  {
+    margin-top: 61px;
+    margin-left: 35px;
+  }
+}
+
+.popular-product__popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
