@@ -9,89 +9,89 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
 
-  &__item {
-    margin: 0;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
+.benefits-list__item {
+  margin: 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 47%;
+  }
+
+  &--eco {
+    &::before {
+      content: url("../img/icons/ecological.svg");
+      display: block;
+      margin-bottom: 19px;
+    }
 
     @media (min-width: @tablet-width) {
-      font-size: 20px;
-      line-height: 22px;
-      width: 47%;
+      order: 1;
+    }
+  }
+
+  &--price {
+    &::before {
+      content: url("../img/icons/price.svg");
+      display: block;
+      margin-bottom: 32px;
     }
 
-    &--eco {
-      &::before {
-        content: url("../img/icons/ecological.svg");
-        display: block;
-        margin-bottom: 19px;
-      }
+    @media (min-width: @tablet-width) {
+      order: 3;
+    }
+  }
 
-      @media (min-width: @tablet-width) {
-        order: 1;
-      }
+  &--like {
+    &::before {
+      content: url(../img/icons/like.svg);
+      display: block;
+      margin-bottom: 26px;
     }
 
-    &--price {
-      &::before {
-        content: url("../img/icons/price.svg");
-        display: block;
-        margin-bottom: 32px;
-      }
+    @media (min-width: @tablet-width) {
+      order: 5;
+    }
+  }
 
-      @media (min-width: @tablet-width) {
-        order: 3;
-      }
+  &--related {
+    &::before {
+      content: url(../img/icons/related.svg);
+      display: block;
+      margin-bottom: 21px;
     }
 
-    &--like {
-      &::before {
-        content: url(../img/icons/like.svg);
-        display: block;
-        margin-bottom: 26px;
-      }
+    @media (min-width: @tablet-width) {
+      order: 2;
+    }
+  }
 
-      @media (min-width: @tablet-width) {
-        order: 5;
-      }
+  &--support {
+    &::before {
+      content: url(../img/icons/support.svg);
+      display: block;
+      margin-bottom: 32px;
     }
 
-    &--related {
-      &::before {
-        content: url(../img/icons/related.svg);
-        display: block;
-        margin-bottom: 21px;
-      }
+    @media (min-width: @tablet-width) {
+      order: 4;
+    }
+  }
 
-      @media (min-width: @tablet-width) {
-        order: 2;
-      }
+  &--gift {
+    &::before {
+      content: url(../img/icons/gift.svg);
+      display: block;
+      margin-bottom: 24px;
     }
 
-    &--support {
-      &::before {
-        content: url(../img/icons/support.svg);
-        display: block;
-        margin-bottom: 32px;
-      }
-
-      @media (min-width: @tablet-width) {
-        order: 4;
-      }
-    }
-
-    &--gift {
-      &::before {
-        content: url(../img/icons/gift.svg);
-        display: block;
-        margin-bottom: 24px;
-      }
-
-      @media (min-width: @tablet-width) {
-        order: 6;
-      }
+    @media (min-width: @tablet-width) {
+      order: 6;
     }
   }
 }

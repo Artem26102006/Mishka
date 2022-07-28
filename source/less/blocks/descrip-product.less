@@ -2,119 +2,119 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
       "paragraph img"
       "character img"
       "price img"
       "button img";
   }
+}
 
-  &__paragraph {
-    margin: 0;
-    line-height: 24px;
-    font-size: 15px;
-    margin-bottom: 28px;
+.descrip-product__paragraph {
+  margin: 0;
+  line-height: 24px;
+  font-size: 15px;
+  margin-bottom: 28px;
 
-    @media (min-width: @tablet-width) {
-      font-size: 17px;
-      line-height: 30px;
-      margin-bottom: 39px;
-      grid-area: paragraph;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 292px;
-      margin-bottom: 44px;
-      margin-left: 175px;
-    }
-  }
-
-  &__image-block {
-    margin: 0;
-    margin-top: 28px;
-    margin-bottom: 26px;
-
-    @media (min-width: @tablet-width) {
-      margin: 0;
-      padding-left: 38px;
-      margin-left: auto;
-      margin-top: auto;
-      grid-area: img;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin: 0;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
-  }
-
-  &__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    object-fit: cover;
-
-    @media (min-width: @tablet-width) {
-      width: 334px;
-      height: 404px;
-      margin: 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 525px;
-      height: 636px;
-    }
-  }
-
-  &__characteristics {
-    @media (min-width: @tablet-width) {
-      grid-area: character;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 291px;
-    }
-  }
-
-  &__price {
-    color: var(--black-light);
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+  @media (min-width: @tablet-width) {
     font-size: 17px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    width: 154px;
-
-    @media (min-width: @tablet-width) {
-      grid-area: price;
-      font-size: 20px;
-      width: 174px;
-      margin: 62px auto 33px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin: 110px 0 33px 234px;
-    }
+    line-height: 30px;
+    margin-bottom: 39px;
+    grid-area: paragraph;
   }
 
-  &__button {
-    width: 100%;
+  @media (min-width: @desktop-width) {
+    width: 292px;
+    margin-bottom: 44px;
+    margin-left: 175px;
+  }
+}
+
+.descrip-product__image-block {
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-left: 38px;
+    margin-left: auto;
+    margin-top: auto;
+    grid-area: img;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.descrip-product__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 404px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
+}
+
+.descrip-product__characteristics {
+  @media (min-width: @tablet-width) {
+    grid-area: character;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 291px;
+  }
+}
+
+.descrip-product__price {
+  color: var(--black-light);
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  width: 154px;
+
+  @media (min-width: @tablet-width) {
+    grid-area: price;
+    font-size: 20px;
+    width: 174px;
+    margin: 62px auto 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 110px 0 33px 234px;
+  }
+}
+
+.descrip-product__button {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 400px;
+
+  @media (min-width: @tablet-width) {
+    grid-area: button;
+    width: 292px;
     margin: 0 auto;
-    max-width: 400px;
+  }
 
-    @media (min-width: @tablet-width) {
-      grid-area: button;
-      width: 292px;
-      margin: 0 auto;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-left: 175px;
-    }
+  @media (min-width: @desktop-width) {
+    margin-left: 175px;
   }
 }
