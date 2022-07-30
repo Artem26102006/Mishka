@@ -20,6 +20,18 @@
   position: relative;
   width: 50%;
 
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
   &::before {
     content: url("../img/icons/arrow.svg");
     position: absolute;

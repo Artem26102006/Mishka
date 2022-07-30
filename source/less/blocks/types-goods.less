@@ -10,12 +10,6 @@
   }
 }
 
-.types-goods__item {
-  &:hover {
-    transform: translateY(-7px);
-  }
-}
-
 .types-goods__link {
   color: var(--white);
   text-decoration: none;
@@ -24,6 +18,17 @@
   padding-left: 30px;
   padding: 24px 36px 31px 30px;
   background-color: var(--green);
+
+  &:hover {
+    transform: translateY(-7px);
+    background-color: var(--green-light);
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.6;
+    }
+  }
 
   &--interior {
     &::after {
@@ -53,6 +58,11 @@
 
   &--back-darker {
     background-color: var(--green-dark);
+
+    &:hover {
+      transform: translateY(-7px);
+      background-color: var(--green-hover);
+    }
   }
 
   @media (min-width: @tablet-width) {
