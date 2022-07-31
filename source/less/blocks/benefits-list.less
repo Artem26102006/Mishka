@@ -8,6 +8,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    row-gap: 47px;
   }
 }
 
@@ -20,7 +25,11 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    width: 47%;
+    width: 48%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 46%;
   }
 
   &--eco {

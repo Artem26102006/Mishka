@@ -4,17 +4,20 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   row-gap: 35px;
-  column-gap: 25px;
   font-size: 14px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
   }
+
+  @media (min-width: @desktop-width) {
+    row-gap: 30px;
+  }
 }
 
 .data__block {
   display: grid;
-  grid-template-columns: 76px 1fr;
+  grid-template-columns: 78px 1fr;
   grid-template-rows: min-content min-content;
 }
 

@@ -5,6 +5,8 @@
   padding: 22px 30px;
   position: relative;
   background-color: var(--white);
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--gray);
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -12,7 +14,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 9px 0 7px 0;
+    padding: 0;
+    display: flex;
   }
 }
 

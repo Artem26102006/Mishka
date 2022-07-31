@@ -4,7 +4,7 @@
   @media (min-width: @tablet-width) {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: min-content 1fr;
     grid-template-areas:
       "logo user"
@@ -48,6 +48,10 @@
   @media (min-width: @tablet-width) {
     grid-area: logo;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 100%;
+  }
 }
 
 .navigation__main-menu {
@@ -60,6 +64,7 @@
 
   @media (min-width: @desktop-width) {
     position: static;
+    width: 350px;
     height: 100%;
   }
 }

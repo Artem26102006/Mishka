@@ -3,12 +3,13 @@
   padding-bottom: 35px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 91px;
-    padding-bottom: 57px;
+    padding-top: 71px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
+    padding-top: 150px;
+    padding-bottom: 105px;
   }
 }
 
@@ -16,13 +17,25 @@
   padding: 0;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: url("../img/icons/flag.svg");
+      position: absolute;
+      right: 53px;
+      top: -20px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     box-sizing: border-box;
     margin: 0 auto;
     position: relative;
-    padding-top: 150px;
-    padding-bottom: 105px;
-    padding-left: 63px;
+    padding-left: 175px;
+
+    &::before {
+      top: -17px;
+      left: 62px;
+    }
   }
 }
 
@@ -37,14 +50,8 @@
     margin-bottom: 49px;
     margin-left: 50px;
     font-size: 43px;
+    width: 75%;
     line-height: 50px;
-
-    &::after {
-      content: url("../img/icons/flag.svg");
-      position: absolute;
-      right: 24px;
-      bottom: -5px;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -53,12 +60,6 @@
     line-height: 57px;
     margin: 0;
     margin-bottom: 35px;
-    padding-left: 105px;
-
-    &::after {
-      left: 0;
-      bottom: -15px;
-    }
   }
 }
 
@@ -77,8 +78,7 @@
     margin: 0;
     width: 295px;
     gap: 28px;
-    margin-bottom: 80px;
-    margin-left: 110px;
+    margin-bottom: 82px;
   }
 }
 
@@ -102,7 +102,7 @@ iframe {
     display: block;
     position: absolute;
     right: 0;
-    top: 79px;
+    bottom: 0;
   }
 }
 
@@ -119,7 +119,6 @@ iframe {
 
 .contacts__button {
   box-sizing: border-box;
-  min-width: 260px;
   margin: 40px 30px 0;
 
   @media (min-width: 460px) {
@@ -134,7 +133,5 @@ iframe {
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    margin-left: 110px;
   }
 }
-
