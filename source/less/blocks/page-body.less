@@ -8,11 +8,28 @@
     "header"
     "main"
     "footer";
+  padding-top: 80px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .page-body__header {
   background-color: var(--white);
   grid-area: header;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+
+  @media (max-width: 767px) {
+    &--show {
+      height: 80px;
+      overflow: hidden;
+    }
+  }
 }
 
 .page-body__main {

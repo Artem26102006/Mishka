@@ -1,5 +1,7 @@
 .events-menu {
   @media (min-width: @desktop-width) {
+    .list-none();
+    font-size: 15px;
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -10,7 +12,11 @@
 }
 
 .events-menu__link {
-  padding: 19px 0;
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+  padding: 25px 0;
 
   &:hover {
     opacity: 0.6;

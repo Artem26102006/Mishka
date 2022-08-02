@@ -1,6 +1,6 @@
 .review {
   .zigzag-gray();
-  padding-bottom: 45px;
+  padding-bottom: 50px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -54,6 +54,7 @@
     line-height: 50px;
     font-size: 43px;
     margin: 0;
+    word-break: break-word;
   }
 
   @media (min-width: @desktop-width) {
@@ -72,7 +73,12 @@
   @media (min-width: @tablet-width) {
     grid-area: parag;
     font-size: 17px;
-    margin: 36px 61px 47px 0;
+    margin: 36px 25px 60px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 61px;
+    margin-bottom: 45px;
   }
 }
 
@@ -81,7 +87,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   column-gap: 20px;
 
   @media (min-width: @tablet-width) {
@@ -98,6 +104,14 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .review__login {
@@ -115,22 +129,16 @@
   @media (min-width: @tablet-width) {
     width: 175px;
     margin: 0;
+    margin-left: auto;
+    align-self: center;
     grid-area: button;
-  }
-}
-
-.review__block-link {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: end;
   }
 }
 
 .review__buttons-slider {
   width: 100%;
   min-height: 52px;
-  margin: 0 auto 38px;
+  margin: 0 auto 34px;
   max-width: 400px;
 
   @media (min-width: @tablet-width) {

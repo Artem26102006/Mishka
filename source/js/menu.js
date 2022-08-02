@@ -1,13 +1,10 @@
-let main_menu = document.querySelector(".main-menu");
-let user_menu = document.querySelector(".user-menu");
+let header = document.querySelector(".main-header");
 let button = document.querySelector(".logo-burger__button");
 
-main_menu.classList.add("menu--unshow");
-user_menu.classList.add("menu--unshow");
+header.classList.add("page-body__header--show");
 button.classList.add("logo-burger__button--open");
 
 button.addEventListener("click", function () {
-  main_menu.classList.toggle("menu--unshow");
-  user_menu.classList.toggle("menu--unshow");
+  header.classList.toggle("page-body__header--show");
   button.classList.toggle("logo-burger__button--close");
 });
