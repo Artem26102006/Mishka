@@ -12,6 +12,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 48% 46%;
     row-gap: 47px;
   }
 }
@@ -21,6 +24,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -29,7 +33,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 46%;
+    width: auto;
   }
 
   &--eco {
@@ -97,6 +101,12 @@
       @media (min-width: @tablet-width) {
         top: 5px;
       }
+
+      @media (min-width: @desktop-width) {
+        margin-bottom: 16px;
+        left: 7px;
+        top: 2px;
+      }
     }
 
     @media (min-width: @tablet-width) {
@@ -115,6 +125,12 @@
       @media (min-width: @tablet-width) {
         top: 7px;
         left: -5px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: -3px;
+        top: 9px;
+        margin-bottom: 34px;
       }
     }
 
