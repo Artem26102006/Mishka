@@ -8,17 +8,34 @@
     "header"
     "main"
     "footer";
+  padding-top: 80px;
 
-  &__header {
-    background-color: var(--white);
-    grid-area: header;
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
   }
+}
 
-  &__main {
-    grid-area: main;
-  }
+.page-body__header {
+  background-color: var(--white);
+  grid-area: header;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
 
-  &__footer {
-    grid-area: footer;
+  @media (max-width: 767px) {
+    &--show {
+      height: 80px;
+      overflow: hidden;
+    }
   }
+}
+
+.page-body__main {
+  grid-area: main;
+}
+
+.page-body__footer {
+  grid-area: footer;
 }

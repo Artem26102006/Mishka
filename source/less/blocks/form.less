@@ -1,125 +1,121 @@
-.form {
+.form__background {
   @media (min-width: @tablet-width) {
-    &__background {
-      background-color: var(--gray-back-light);
-    }
+    background-color: var(--gray-back-light);
+  }
+}
+
+.form__type {
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 
-  &__type {
-    margin-bottom: 31px;
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      margin-bottom: 0;
-    }
+.form__color {
+  margin-bottom: 33px;
 
-    @media (min-width: @desktop-width) {
-      max-width: 1050px;
-      margin: 0 auto;
-    }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 
-  &__color {
-    margin-bottom: 33px;
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      margin-bottom: 0;
-    }
+.form__user {
+  margin-bottom: 35px;
 
-    @media (min-width: @desktop-width) {
-      max-width: 1050px;
-      margin: 0 auto;
-    }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 
-  &__user {
-    margin-bottom: 35px;
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      margin-bottom: 0;
-    }
+.form__user-data {
+  margin-bottom: 35px;
 
-    @media (min-width: @desktop-width) {
-      max-width: 1050px;
-      margin: 0 auto;
-    }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 
-  &__user-data {
-    margin-bottom: 35px;
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      margin-bottom: 0;
-    }
+.form__extra {
+  margin-bottom: 15px;
 
-    @media (min-width: @desktop-width) {
-      max-width: 1050px;
-      margin: 0 auto;
-    }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 
-  &__extra {
-    margin-bottom: 17px;
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      margin-bottom: 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      max-width: 1050px;
-      margin: 0 auto;
-    }
+.form__submission {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
   }
 
-  &__submission {
-    @media (min-width: @tablet-width) {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 50px;
-    }
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 175px;
+    justify-content: space-between;
+  }
+}
 
-    @media (min-width: @desktop-width) {
-      max-width: 1050px;
-      margin: 0 auto;
-      box-sizing: border-box;
-      padding: 0;
-      justify-content: space-between;
-      padding-left: 187px;
-      padding-right: 160px;
-    }
+.form__notice {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--black-light);
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    text-align: start;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
   }
 
-  &__notice {
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    line-height: 16px;
-    color: var(--black-light);
-    margin-bottom: 30px;
+  @media (min-width: @desktop-width) {
+    width: 330px;
+    text-align: end;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      text-align: start;
-      font-size: 17px;
-      line-height: 30px;
-      margin: 0;
-    }
+.form__button {
+  width: 100%;
 
-    @media (min-width: @desktop-width) {
-      width: 330px;
-      text-align: end;
-    }
+  @media (min-width: @tablet-width) {
+    width: 34.5%;
   }
 
-  &__button {
-    width: 100%;
-
-    @media (min-width: @tablet-width) {
-      width: 34.5%;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 230px;
-    }
+  @media (min-width: @desktop-width) {
+    width: 230px;
   }
 }

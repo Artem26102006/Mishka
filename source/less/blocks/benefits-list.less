@@ -2,88 +2,160 @@
   .list-none();
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 33px;
+  gap: 26px;
 
   @media (min-width: @tablet-width) {
-    row-gap: 57px;
-    column-gap: 30px;
-    grid-auto-flow: dense;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 40px;
   }
 
-  &__item {
-    margin: 0;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
+  @media (min-width: @desktop-width) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 48% 46%;
+    row-gap: 47px;
+  }
+}
+
+.benefits-list__item {
+  margin: 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 44%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+
+  &--eco {
+    &::before {
+      content: url("../img/icons/ecological.svg");
+      display: block;
+      position: relative;
+      left: 7px;
+      margin-bottom: 15px;
+    }
 
     @media (min-width: @tablet-width) {
-      font-size: 20px;
-      line-height: 22px;
+      order: 1;
     }
+  }
 
-    &--eco {
-      &::before {
-        content: url("../img/icons/ecological.svg");
-        display: block;
-        margin-bottom: 19px;
+  &--price {
+    &::before {
+      content: url("../img/icons/price.svg");
+      display: block;
+      position: relative;
+      margin-bottom: 25px;
+
+      @media (min-width: @tablet-width) {
+        top: 4px;
+        margin-bottom: 27px;
       }
     }
 
-    &--price {
-      &::before {
-        content: url("../img/icons/price.svg");
-        display: block;
+    @media (min-width: @tablet-width) {
+      order: 3;
+    }
+  }
+
+  &--like {
+    &::before {
+      content: url(../img/icons/like.svg);
+      display: block;
+      position: relative;
+      left: 6px;
+      top: 7px;
+      margin-bottom: 25px;
+
+      @media (min-width: @tablet-width) {
+        left: 8px;
+        top: 12px;
         margin-bottom: 32px;
       }
+    }
+
+    @media (min-width: @tablet-width) {
+      order: 5;
+    }
+  }
+
+  &--related {
+    &::before {
+      content: url(../img/icons/related.svg);
+      display: block;
+      position: relative;
+      left: 2px;
+      top: 7px;
+      margin-bottom: 22px;
 
       @media (min-width: @tablet-width) {
-        grid-column: 1 / 2;
+        top: 5px;
+      }
+
+      @media (min-width: @desktop-width) {
+        margin-bottom: 16px;
+        left: 7px;
+        top: 2px;
       }
     }
 
-    &--like {
-      &::before {
-        content: url(../img/icons/like.svg);
-        display: block;
-        margin-bottom: 26px;
-      }
+    @media (min-width: @tablet-width) {
+      order: 2;
+    }
+  }
+
+  &--support {
+    &::before {
+      content: url(../img/icons/support.svg);
+      display: block;
+      position: relative;
+      top: 5px;
+      margin-bottom: 30px;
 
       @media (min-width: @tablet-width) {
-        grid-row: 3 / 4;
+        top: 7px;
+        left: -5px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: -3px;
+        top: 9px;
+        margin-bottom: 34px;
       }
     }
 
-    &--related {
-      &::before {
-        content: url(../img/icons/related.svg);
-        display: block;
-        margin-bottom: 21px;
+    @media (min-width: @tablet-width) {
+      order: 4;
+    }
+  }
+
+  &--gift {
+    &::before {
+      content: url(../img/icons/gift.svg);
+      display: block;
+      position: relative;
+      left: 3px;
+      top: 5px;
+      margin-bottom: 22px;
+
+      @media (min-width: @tablet-width) {
+        top: 10px;
+        margin-bottom: 27px;
       }
     }
 
-    &--support {
-      &::before {
-        content: url(../img/icons/support.svg);
-        display: block;
-        margin-bottom: 32px;
-      }
-
-      @media (min-width: @tablet-width) {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-      }
-    }
-
-    &--gift {
-      &::before {
-        content: url(../img/icons/gift.svg);
-        display: block;
-        margin-bottom: 24px;
-      }
-
-      @media (min-width: @tablet-width) {
-        grid-column: 2 / 3;
-      }
+    @media (min-width: @tablet-width) {
+      order: 6;
     }
   }
 }

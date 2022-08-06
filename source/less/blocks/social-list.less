@@ -1,7 +1,7 @@
 .social-list {
   .list-none();
   display: flex;
-  column-gap: 29px;
+  gap: 29px;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 28px;
@@ -12,12 +12,23 @@
     justify-content: flex-start;
     border: none;
   }
+}
 
-  &__link {
-    display: block;
-  }
+.social-list__link {
+  display: block;
 
-  &__icon {
-    display: block;
+  svg {
+    &:hover {
+      fill: var(--green-hover);
+    }
+
+    &:active {
+      fill: var(--green-hover);
+      opacity: 0.3;
+    }
   }
+}
+
+.social-list__icon {
+  display: block;
 }

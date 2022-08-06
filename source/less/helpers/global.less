@@ -14,12 +14,17 @@
   font-size: 0.82353em;
   --green: #63D1BB;
   --green-dark: #56c3b2;
+  --green-light: #59D5BC;
+  --green-hover: #46C1AE;
+  --shadow: #00010140;
   --black: #000000;
   --black-light: #444444;
   --gray: #ECECEC;
   --gray-light: #E5E5E5;
   --gray-back: #F9F9F9;
   --gray-back-light: #F1F1F1;
+  --gray-dark: #C6C6C6;
+  --gray-light-active: #B3B3B3;
   --white: #fff;
 
   @media (min-width: @tablet-width) {
@@ -36,6 +41,19 @@
 
 body {
   margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--gray);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 50px;
 }
 
 /**

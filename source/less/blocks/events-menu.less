@@ -1,16 +1,28 @@
 .events-menu {
-  display: none;
-
   @media (min-width: @desktop-width) {
+    .list-none();
+    font-size: 15px;
     display: flex;
     position: relative;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 65px;
+    column-gap: 60px;
     background-color: var(--gray-back);
+  }
+}
 
-    &__link {
-      padding: 19px 0;
-    }
+.events-menu__link {
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+  padding: 25px 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

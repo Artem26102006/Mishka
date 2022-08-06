@@ -1,0 +1,33 @@
+.input {
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  padding: 17px 0;
+  padding-right: 45px;
+  width: 100%;
+  border-bottom: 3px solid var(--black);
+  font-size: 17px;
+  line-height: 18px;
+  outline: none;
+
+  &:hover {
+    border-bottom: 3px solid var(--green);
+  }
+
+  &:focus {
+    border-bottom: 3px solid var(--green-hover);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+    padding-left: 20px;
+
+    &--back-gray {
+      background-color: var(--gray-back-light);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+  }
+}

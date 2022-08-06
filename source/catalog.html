@@ -15,7 +15,7 @@
     <div class="container main-header__container">
       <nav class="navigation main-header__navigation">
         <div class="logo-burger navigation__logo-burger">
-          <a href="index.html" class="logo-burger__main-link">
+          <a href="index.html" target="_blank" class="logo-burger__main-link">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/icons/mishka-logo-desktop.svg" />
               <source media="(min-width: 768px)" srcset="img/icons/mishka-logo-tablet.svg" />
@@ -27,34 +27,34 @@
           </button>
         </div>
 
-        <ul class="main-menu menu navigation__main-menu">
-          <li class="menu__item main-menu__item">
-            <a class="menu__link main-menu__link">
+        <ul class="main-menu navigation__main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link">
               Каталог товаров
             </a>
           </li>
-          <li class="menu__item main-menu__item">
-            <a href="form.html" class="menu__link main-menu__link">
+          <li class="main-menu__item">
+            <a href="form.html" target="_blank" class="main-menu__link">
               Вязание на заказ
             </a>
           </li>
         </ul>
 
-        <ul class="user-menu menu navigation__user-menu">
-          <li class="menu__item user-menu__item">
-            <a href="#" class="menu__link user-menu__search">
+        <ul class="user-menu navigation__user-menu">
+          <li class="user-menu__item user-menu__item-search">
+            <a href="#" class="user-menu__link user-menu__search">
               <svg width="18" height="18" class="user-menu__icon-search">
                 <use href="img/sprite.svg#search"></use>
               </svg>
-              <span class="user-menu__span">Поиск по сайту</span>
+              <span class="user-menu__span user-menu__span--hidden">Поиск по сайту</span>
             </a>
           </li>
-          <li class="menu__item user-menu__item">
-            <a href="#" class="menu__link user-menu__link-basket menu__link--end">
-              <svg width="21" height="18" class="user-menu__basket">
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link user-menu__basket">
+              <svg width="21" height="18" class="user-menu__icon-basket">
                 <use href="img/sprite.svg#basket"></use>
               </svg>
-              <span>Корзина: пока пуста</span>
+              <span class="user-menu__span">Корзина: пока пуста</span>
             </a>
           </li>
         </ul>
@@ -88,12 +88,18 @@
           <li class="list-products__item product">
             <a href="#" class="product__link-image">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/product-toy-bunny-desktop.webp, img/product-toy-bunny-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-toy-bunny-tablet.webp, img/product-toy-bunny-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/product-toy-bunny-mobile.webp, img/product-toy-bunny-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)"
                   srcset="img/product-toy-bunny-desktop.jpg 1x, img/product-toy-bunny-desktop@2x.jpg 2x" />
                 <source media="(min-width: 768px)"
                   srcset="img/product-toy-bunny-tablet.jpg 1x, img/product-toy-bunny-tablet@2x.jpg 2x" />
                 <img class="product__image" src="img/product-toy-bunny-mobile.jpg"
-                  srcset="img/product-toy-bunny-mobile@2x.jpg 2x" alt="">
+                  srcset="img/product-toy-bunny-mobile@2x.jpg 2x" alt="Игрушка Зайчик-попрыгайчик">
               </picture>
             </a>
 
@@ -122,12 +128,17 @@
           <li class="list-products__item product">
             <a href="#" class="product__link-image">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/laundry-basket-desktop.webp, img/laundry-basket-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/laundry-basket-tablet.webp, img/laundry-basket-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/laundry-basket-mobile.webp, img/laundry-basket-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)"
                   srcset="img/laundry-basket-desktop.jpg 1x, img/laundry-basket-desktop@2x.jpg 2x" />
                 <source media="(min-width: 768px)"
                   srcset="img/laundry-basket-tablet.jpg 1x, img/laundry-basket-tablet@2x.jpg 2x" />
                 <img class="product__image" src="img/laundry-basket-mobile.jpg"
-                  srcset="img/laundry-basket-mobile@2x.jpg 2x" alt="">
+                  srcset="img/laundry-basket-mobile@2x.jpg 2x" alt="Корзина для белья">
               </picture>
             </a>
 
@@ -156,12 +167,18 @@
           <li class="list-products__item product">
             <a href="#" class="product__link-image">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/big-basket-for-toys-desktop.webp, img/big-basket-for-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/big-basket-for-toys-tablet.webp, img/big-basket-for-toys-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/big-basket-for-toys-mobile.webp, img/big-basket-for-toys-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)"
                   srcset="img/big-basket-for-toys-desktop.jpg 1x, img/big-basket-for-toys-desktop@2x.jpg 2x" />
                 <source media="(min-width: 768px)"
                   srcset="img/big-basket-for-toys-tablet.jpg 1x, img/big-basket-for-toys-tablet@2x.jpg 2x" />
                 <img class="product__image" src="img/big-basket-for-toys-mobile.jpg"
-                  srcset="img/big-basket-for-toys-mobile@2x.jpg 2x" alt="">
+                  srcset="img/big-basket-for-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
               </picture>
             </a>
 
@@ -186,28 +203,71 @@
               </div>
             </div>
           </li>
-
         </ul>
+
+        <div class="popup catalog__popup">
+          <div class="popup__content" aria-haspopup="true">
+            <h2 class="popup__title">
+              Добавить в корзину
+            </h2>
+
+            <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="size popup__size">
+                <legend class="size__title">
+                  Выберите размер:
+                </legend>
+
+                <div class="size__block">
+                  <label class="size__label">
+                    <input type="radio" class="size__input visually-hidden" name="size" value="small" />
+                    <span class="size__control-mark size__control-mark--small"></span>
+                    <span class="visually-hidden">Маленький размер</span>
+                  </label>
+
+                  <label class="size__label">
+                    <input type="radio" class="size__input visually-hidden" name="size" value="medium" />
+                    <span class="size__control-mark size__control-mark--medium"></span>
+                    <span class="visually-hidden">Средний размер</span>
+                  </label>
+
+                  <label class="size__label">
+                    <input type="radio" class="size__input visually-hidden" name="size" value="large" />
+                    <span class="size__control-mark size__control-mark--large"></span>
+                    <span class="visually-hidden">Большой размер</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <button type="submit" class="button popup__button button--secondary">
+                Добавить
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="production">
-      <div class="container production__wrapper">
+      <div class="container production__container">
         <h2 class="production__title">
           Процесс производства
         </h2>
 
         <div class="production__block-video">
-          <button class="button production__button-replay">
+          <button class="production__button-replay">
             <span class="visually-hidden">
               Воиспроизвести видео
             </span>
-            <svg width="100" height="77">
-              <use href="img/sprite.svg#play"></use>
-            </svg>
           </button>
 
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/video-desktop.webp, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-tablet.webp, img/video-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/video-mobile.webp, img/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" />
             <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" />
             <img class="production__video" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="">
           </picture>
@@ -232,7 +292,7 @@
         </svg>
       </a>
 
-      <ul class="social-list">
+      <ul class="social-list footer__social-list">
         <li class="social-list__item">
           <a href="#" class="social-list__link">
             <svg width="28" height="22" class="social-list__icon">
@@ -263,6 +323,11 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/menu.js">
+  </script>
+  <script src="js/popup.js">
+  </script>
 </body>
 
 </html>

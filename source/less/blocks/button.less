@@ -1,0 +1,56 @@
+.button {
+  display: block;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--black-light);
+  border: 2px solid var(--black-light);
+  padding: 16px 0;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: var(--black-light);
+    color: var(--white);
+  }
+
+  &:active {
+    background-color: var(--black-light);
+
+    span {
+      opacity: 0.3;
+    }
+  }
+
+  &--secondary {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 18px 0;
+    font-size: 17px;
+
+    &:hover {
+      background-color: var(--green);
+      color: var(--white);
+    }
+
+    &:active {
+      background-color: var(--green);
+
+      span {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+}
