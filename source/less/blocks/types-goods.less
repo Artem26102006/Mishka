@@ -12,15 +12,19 @@
 
 .types-goods__link {
   color: var(--white);
+  box-sizing: border-box;
   text-decoration: none;
-  display: block;
+  display: flex;
   position: relative;
-  padding-left: 30px;
+  flex-wrap: wrap;
   padding: 29px 36px 31px 30px;
   background-color: var(--green);
+  transition: 150ms ease;
+  height: 100%;
 
   &:hover {
     transform: translateY(-7px);
+    height: 105%;
     background-color: var(--green-light);
   }
 
@@ -60,13 +64,12 @@
     background-color: var(--green-dark);
 
     &:hover {
-      transform: translateY(-7px);
       background-color: var(--green-hover);
     }
   }
 
   @media (min-width: @tablet-width) {
-    padding: 25px 36px 34px 37px;
+    padding: 25px 80px 34px 37px;
   }
 }
 
@@ -74,6 +77,8 @@
   display: block;
   width: 130px;
   font-weight: 700;
+  margin-top: auto;
+  margin-bottom: auto;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
