@@ -19,14 +19,13 @@
   @media (min-width: @tablet-width) {
     display: block;
 
-    &:hover {
-      svg {
+    svg {
+      transition: 150ms ease;
+      &:hover {
         fill: var(--green-hover);
       }
-    }
 
-    &:active {
-      svg {
+      &:active {
         fill: var(--green-hover);
         opacity: 0.3;
       }
@@ -48,6 +47,7 @@
 
   svg {
     fill: var(--green);
+    transition: 150ms ease;
   }
 
   &:hover {
