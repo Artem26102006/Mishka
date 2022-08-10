@@ -16,38 +16,39 @@
 }
 
 .zigzag-white() {
-  &::before {
+  &::after {
     @media (min-width: @tablet-width) {
-      content: "";
-      background: url(../img/icons/zigzag-line-white.svg) repeat-x;
       width: 100%;
-      height: 24px;
+      content: " ";
       position: absolute;
-      bottom: 0;
-      z-index: 5;
-      background-size: contain;
+      bottom: -12px;
+      background: url(../img/icons/zigzag-line-white.svg) repeat-x;
+      height: 24px;
+      background-size: 768px 24px;
     }
 
     @media (min-width: @desktop-width) {
+      bottom: -15px;
       height: 34px;
-      background-size: 1150px auto;
+      background-position-x: 12px;
+      background-size: 1250px 34px;
     }
   }
 }
 
 .zigzag-gray() {
-  &::before {
+  &::after {
     content: "";
     background: url(../img/icons/zigzag-line-black.svg) repeat-x;
     width: 100%;
     height: 6px;
     position: absolute;
     bottom: 0;
-    background-size: contain;
+    background-size: 320px 6px;
 
     @media (min-width: @tablet-width) {
-      width: 100%;
       height: 17px;
+      background-size: 768px 17px;
     }
 
     @media (min-width: @desktop-width) {
@@ -55,7 +56,7 @@
       height: 23px;
       left: 50%;
       transform: translateX(-50%);
-      background-size: 1050px;
+      background-size: 1050px 23px;
     }
   }
 }
