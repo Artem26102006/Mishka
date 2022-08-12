@@ -1,11 +1,12 @@
 .types-goods {
   .list-none();
+  display: grid;
+  grid-template-columns: 1fr;
   font-size: 19px;
   background-color: var(--green);
   margin-top: auto;
 
   @media (min-width: 500px) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
   }
