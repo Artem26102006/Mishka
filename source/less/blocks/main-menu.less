@@ -9,10 +9,10 @@
     font-size: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--gray-back);
     padding-left: 50px;
+    column-gap: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,7 +27,7 @@
       content: "";
       position: absolute;
       top: 0;
-      right: 370px;
+      right: 375px;
       width: calc(50vw - 525px);
       height: 100%;
       border-bottom: 2px solid  var(--gray);
@@ -61,7 +61,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 20px 0;
+    padding: 24px 0;
     text-align: start;
   }
 
@@ -75,6 +75,7 @@
 
   @media (min-width: @tablet-width) {
     width: 44%;
+    flex: auto;
     border-bottom: none;
   }
 
