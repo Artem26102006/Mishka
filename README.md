@@ -1,7 +1,7 @@
 # Личный проект «Mishka» 
 
 * Студент: [Artem Kazuta](https://up.htmlacademy.ru/adaptive/25/user/1853915).
-* Наставник: [Сергей Зубарев](https://htmlacademy.ru/profile/serj).
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
