@@ -1,5 +1,17 @@
 .navigation {
   position: relative;
+  height: auto;
+  background-color: var(--white);
+
+  @media (max-width: 767px) {
+    &--show {
+      width: 100%;
+      top: 0;
+      position: absolute;
+      overflow-y: hidden;
+      height: 80px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     position: relative;

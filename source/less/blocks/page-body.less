@@ -14,12 +14,12 @@
   background-color: var(--white);
   grid-area: header;
   height: auto;
+  z-index: 1;
+}
 
-  @media (max-width: 767px) {
-    &--show {
-      height: 80px;
-      overflow: hidden;
-    }
+@media (max-width: 767px) {
+  .page-body__header--height {
+    height: 80px;
   }
 }
 

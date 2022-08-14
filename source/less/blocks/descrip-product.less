@@ -2,7 +2,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: 1fr auto auto auto;
     grid-template-areas:
       "paragraph img"
       "character img"
@@ -112,6 +112,7 @@
     grid-area: button;
     width: 292px;
     margin: 0 auto;
+    margin-top: auto;
   }
 
   @media (min-width: @desktop-width) {
