@@ -4,13 +4,12 @@
   border: none;
 }
 
-
 .size__title {
   font-size: 15px;
   line-height: 30px;
   color: var(--black-light);
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
@@ -24,65 +23,25 @@
   gap: 8px;
 }
 
-.size__control-mark {
-  position: relative;
+.size__label {
   display: flex;
   height: 52px;
   border: 2px solid var(--gray);
+  box-sizing: border-box;
 
   &:hover {
     border: 2px solid var(--shadow);
   }
 
-  &:active {
+  &:focus-within {
     border: 2px solid var(--green);
   }
+}
 
-  &--small {
-    &::before {
-      content: "s";
-      font-size: 17px;
-      height: 16px;
-      text-transform: uppercase;
-      color: var(--black-light);
-      margin: auto;
-      font-weight: bold;
-    }
-  }
-
-  &--small {
-    &::before {
-      content: "s";
-      font-size: 17px;
-      height: 16px;
-      text-transform: uppercase;
-      color: var(--black-light);
-      margin: auto;
-      font-weight: bold;
-    }
-  }
-
-  &--medium {
-    &::before {
-      content: "m";
-      font-size: 17px;
-      height: 16px;
-      text-transform: uppercase;
-      color: var(--black-light);
-      margin: auto;
-      font-weight: bold;
-    }
-  }
-
-  &--large {
-    &::before {
-      content: "l";
-      font-size: 17px;
-      height: 16px;
-      text-transform: uppercase;
-      color: var(--black-light);
-      margin: auto;
-      font-weight: bold;
-    }
-  }
+.size__control-mark {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--black-light);
+  font-weight: bold;
+  margin: auto;
 }

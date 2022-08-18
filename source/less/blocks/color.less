@@ -2,7 +2,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 50px 50px 41px 50px;
+    padding: 60px 50px 41px 50px;
     display: flex;
     column-gap: 123px;
   }
@@ -27,7 +27,7 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    column-gap: 57px;
+    column-gap: 62px;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,7 +60,7 @@
     }
   }
 
-  &:active {
+  &:focus-within {
     .color__control-mark {
       border: 2px solid var(--gray-light-active);
     }
