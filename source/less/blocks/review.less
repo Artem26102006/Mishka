@@ -16,12 +16,13 @@
 
 .review__container {
   @media (min-width: @tablet-width) {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content 1fr min-content;
+    grid-template-rows: min-content minmax(171px, 1fr) min-content;
     grid-template-areas:
       "title button"
-      "parag parag"
+      "comments comments"
       "info slider";
 
     background: url("../img/back-image-review.jpg") no-repeat;
@@ -71,7 +72,7 @@
   margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
-    grid-area: parag;
+    // grid-area: parag;
     font-size: 17px;
     margin: 36px 25px 63px 0;
   }
@@ -79,6 +80,15 @@
   @media (min-width: @desktop-width) {
     margin-right: 61px;
     margin-bottom: 45px;
+  }
+}
+
+.review__comments {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  @media (min-width: @tablet-width) {
+    grid-area: comments;
   }
 }
 
@@ -91,6 +101,7 @@
   column-gap: 20px;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
